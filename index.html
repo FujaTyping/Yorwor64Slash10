@@ -1,48 +1,77 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ม.2/10 - โรงเรียนหาดใหญ่วิทยาลัย</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="ม.2/10 - โรงเรียนหาดใหญ่วิทยาลัย | ห้องเราโสดเป็นพักๆ แต่น่ารักอะประจำ">
+    <meta charset="utf-8">
+    <title>ม.3/10 | หน้าหลัก</title>
+    <meta name="description" content="เว็ปห้องของ ม.3/10 - โรงเรียนหาดใหญ่วิทยาลัย">
+    <link rel="icon" href="assets/ตรีจักร.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="Assets/styles.css">
-    <script src="Assets/index.js"></script>
-    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6f/%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3.png">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="loader.css" rel="stylesheet" type="text/css">
+    <link href="assets/nav.css" rel="stylesheet" type="text/css">
+    <link href="assets/button.css" rel="stylesheet" type="text/css">
+    <script src="loader.js"></script>
+    <script src="app.js"></script>
+    <script src="assets/nav.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
-<body style="background-color: black;">
-    <br>
-    <div class="CenterHeader">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3.png">
-        <h1>M.??/10 YORWOR</h1>
-        <h2>ม.??/10 - โรงเรียนหาดใหญ่วิทยาลัย</h2>
-        <p>.....</p>
-        <h1>ยินดีต้อนรับเข้าสู่ไซต์</h1>
-        <div class="Inline">
-            <h2>📢 ประกาศ</h2>
-            <iframe style="border: none;" width="100%" height="60px" src="https://script.google.com/macros/s/AKfycbwlpbeUeVy0tofCzy2J4J6TMCMiDaaiaLNITUEmU2XzCjz2mq_v_YycCwFfH7zTodHtug/exec"></iframe>
+<body>
+    <div id="loader" class="Start">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
-    <br>
-    <div class="Decs">
-        <h1 id="Homework">☀ Time to sun set ม.2/10</h1>
-        <h2>We're upgrading this website !</h2>
-    </div>
-    <br>
-    <div class="Footer">
-        <div class="Inline">
-            <a href="https://www.hatyaiwit.ac.th/frontpage" target="_blank">
-                <img width="5%" height="5%" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3.png">
-            </a>
-            <a href="https://www.instagram.com/tengenjedpad_/" target="_blank">
-                <img width="5%" height="5%" src="https://cdn.discordapp.com/attachments/1061529756203499571/1078895866137554974/Instagram_icon-removebg-preview.png">
-            </a>
-            <a href="https://discord.gg/fgTFEkJxvE" target="_blank">
-                <img width="5%" height="5%" src="https://th.bing.com/th/id/R.5ff232157d19b921f7dc016519e3c577?rik=V%2fyPVVdX3WeUeA&pid=ImgRaw&r=0">
-            </a>
+    <div class="Mainstart">
+        <video style="display: none;" id="bg" autoplay loop muted plays-inline class="Background-VDO">
+            <source src="assets/Background.mp4" type="video/mp4">
+        </video>
+        <div>
+            <nav>
+                <div class="logo">
+                  <img src="assets/ตรีจักร.ico">
+                  <h1>โรงเรียนหาดใหญ่วิทยาลัย</h1>
+                </div>
+            </nav>
+            <div style="line-height: 1">
+                <h1 style="font-size: 40px;" >เว็ปห้อง ม.3/10</h1>
+                <h3>โรงเรียนหาดใหญ่วิทยาลัย - ไม่ทางการ</h3>
+                <h3>.....</h3>
+            </div>
+            <div style="line-height: 1">
+                <h1>📢 ประกาศ</h1>
+                <p>อัพเดทข้อมูลแบบ Real time</p>
+            </div>
+            <iframe style="border: none; margin-top: 13px;" width="90%" height="70px" src="https://script.google.com/macros/s/AKfycbwlpbeUeVy0tofCzy2J4J6TMCMiDaaiaLNITUEmU2XzCjz2mq_v_YycCwFfH7zTodHtug/exec"></iframe>
+            <div style="line-height: 1">
+                <h1>🚀 แถบนำทาง</h1>
+                <p>ใช้แถบนำทางเพื่อย้ายไปหน้าอื่นๆได้</p>
+            </div>
+            <button class="Navbutton">
+                <span class="material-symbols-outlined">Home</span>&nbsp;<strong>หน้าหลัก</strong>
+            </button>
+            <button class="Navbutton">
+                <span class="material-symbols-outlined">Book</span>&nbsp;<strong>การบ้าน</strong>
+            </button>
+            <button style="width: 10em;" class="Navbutton">
+                <span class="material-symbols-outlined">Nest_eco_leaf</span>&nbsp;<strong>ห้องเรียบสีขาว</strong>
+            </button>
+            <button style="width: 10em;" class="Navbutton">
+                <span class="material-symbols-outlined">Update</span>&nbsp;<strong>ประวัติการบ้าน</strong>
+            </button>
+            <button class="Navbutton">
+                <span class="material-symbols-outlined">Login</span>&nbsp;<strong>ล็อกอิน</strong>
+            </button>
+            <button onclick="NotOP ()" style="width: 12em; cursor: not-allowed" class="Navbutton">
+                <span class="material-symbols-outlined">Search</span>&nbsp;<strong>ระเบียนผลการเรียน</strong>
+            </button>
         </div>
-        <h2>©2022 ม.2/10 All Lefts reserved</h2>
-        <h3>Made with 💖 by : Siraphop Sukchu</h3>
-    </div> <br>
+    </div>
+    <br> <br>
+    <footer>
+        <p>&copy; ลิขสิทธิ์ สิรภพ 2566 . สงวนลิขสิทธิ์ทั้งหมด .</p>
+    </footer>
 </body>
 </html>

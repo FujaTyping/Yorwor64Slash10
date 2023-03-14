@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+
+* {
+    font-family: Mitr;
+    transition: 0.5s ease-out;
+}
+
+div.Start {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(17, 17, 17);
+}
+
+div.Mainstart {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0);
+    color: #ffffff;
+}
+
+.Background-VDO{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .Background-VDO{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .Background-VDO{
+        width: auto;
+        height: 100%;
+    }
+}
