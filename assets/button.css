@@ -58,3 +58,47 @@
         transform: translate(0);
     }
 }
+
+.backBT {
+    display: flex;
+    height: 3em;
+    width: 70px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    font-size: 12px;
+    background: #fff;
+    animation: slideInFromBottom 0.5s ease-out;
+}
+
+.backBT > span {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+.backBT:hover > span {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+}
+
+.backBT:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+}
