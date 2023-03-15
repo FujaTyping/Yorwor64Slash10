@@ -8,7 +8,8 @@ window.onload = function() {
 
     var path = window.location.pathname;
     var page = path.split("/").pop();
-    if (page == "index.html") {
+    console.log(page)
+    if (page == "") {
         Swal.fire({
             title: 'ตารางกิจกรรม',
             text: 'สามารถกดค้างแล้วกดเปิดรูปภาพได้',
