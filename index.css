@@ -26,10 +26,16 @@ div.Mainstart {
     justify-content: center;
 }
 
+img.ClassSC {
+    width: 800px;
+    height: 500px;
+}
+
 footer {
     display: flex;
     position: fixed;
     bottom: 0;
+    height: 50px;
     width: 100%;
     background-color: rgba(0);
     color: #ffffff;
@@ -41,6 +47,20 @@ footer {
     bottom: 0;
     z-index: -1;
     opacity: 0.7;
+}
+
+@media only screen and (max-width: 900px) {
+    img.ClassSC {
+        width: 550px;
+        height: 370px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    img.ClassSC {
+        width: 330px;
+        height: 230px;
+    }
 }
 
 @media (min-aspect-ratio:16/9) {

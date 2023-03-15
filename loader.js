@@ -9,7 +9,7 @@ window.onload = function() {
     var path = window.location.pathname;
     var page = path.split("/").pop();
     console.log(page)
-    if (page == "") {
+    if (page == "" || page == "index.html" || page == "index") {
         Swal.fire({
             title: 'ตารางกิจกรรม',
             text: 'สามารถกดค้างแล้วกดเปิดรูปภาพได้',
