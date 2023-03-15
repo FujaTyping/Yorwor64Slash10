@@ -16,6 +16,15 @@ function ClassWhite () {
     })
 };
 
+function NoClass () {
+    Swal.fire({
+        icon: 'error',
+        title: '❌ ผิดผลาด',
+        text: 'ยังไม่เปิดเทอมเลย จะมีรหัส Classroom ได้ไง',
+        confirmButtonText: 'โอเค !'
+    })
+};
+
 function NoticeLog () {
     Swal.fire({
         icon: 'info',
