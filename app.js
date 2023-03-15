@@ -1,13 +1,28 @@
 function NotOP () {
-    swal("❌ ผิดผลาด", "ตอนนี้ระเบียนผลการเรียนยังไม่เปิดนะ", "error");
+    Swal.fire({
+        icon: 'error',
+        title: '❌ ผิดผลาด',
+        text: 'ตอนนี้ระเบียนผลการเรียนยังไม่เปิดนะ',
+        confirmButtonText: 'แย่จัง !'
+    })
 };
 
 function ClassWhite () {
-    swal("❌ ผิดผลาด", "ยังไม่มีข้อมูลห้องเรียนสีข้าวเลย", "error");
+    Swal.fire({
+        icon: 'error',
+        title: '❌ ผิดผลาด',
+        text: 'ยังไม่มีข้อมูลห้องเรียนสีข้าวเลย',
+        confirmButtonText: 'โอเค !'
+    })
 };
 
 function NoticeLog () {
-    swal("ℹ ข้อมูล", "ล็อกอินสำหรับผู้ดูและระบบเท่านั้น", "info");
+    Swal.fire({
+        icon: 'info',
+        title: 'ℹ ข้อมูล',
+        text: 'ล็อกอินสำหรับผู้ดูและระบบเท่านั้น',
+        confirmButtonText: 'โอเค เข้าใจแล้ว !'
+    })
 };
 
 document.onreadystatechange = function () {
