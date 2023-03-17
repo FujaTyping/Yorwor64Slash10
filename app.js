@@ -25,6 +25,15 @@ function NoClass () {
     })
 };
 
+function LoginNotopen () {
+    Swal.fire({
+        icon: 'error',
+        title: '❌ ผิดผลาด',
+        text: 'ตอนนี้ระบบ ล็อกอิน ยังไม่เปิดนะ !',
+        confirmButtonText: 'แย่จัง !'
+    })
+};
+
 function NoticeLog () {
     Swal.fire({
         icon: 'info',
