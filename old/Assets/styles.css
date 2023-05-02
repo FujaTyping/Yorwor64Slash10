@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*------------- Nav Bar ----------------*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*------------------------------------*/
+
+/*--------------------------------------*/
+
+div.Inline {
+    flex-wrap: initial;
+}
+
+div.Center {
+    text-align: center;
+    color: white;
+    font-family: Mali;
+}
+
+div.Left {
+    text-align: left;
+}
+
+.BlockLeft {
+    text-align: left;
+}
+
+div.Right {
+    text-align: right;
+}
+
+/*--------------------------------------*/
+
+div.navbar {
+    color: white;
+    display: block;
+    font-family: Mail;
+    background-color: black;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    padding: 0.5px;
+}
+
+div.CenterHeader {
+    text-align: center;
+    color: white;
+    font-family: Mali;
+    background-image: url('https://cdn.discordapp.com/attachments/988037995531759658/996628101423435927/output-onlinepngtools_1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+}
+
+div.Decs {
+    text-align: center;
+    color: white;
+    font-family: Mali;
+    background-image: url('https://cdn.discordapp.com/attachments/988037995531759658/1009806092592750632/output-onlinepngtools_5.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+div.Footer {
+    text-align: center;
+    color: white;
+    font-family: Mali;
+    background-image: url('https://cdn.discordapp.com/attachments/988037995531759658/1009806092592750632/output-onlinepngtools_5.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
