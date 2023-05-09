@@ -49,20 +49,6 @@ footer {
     opacity: 0.7;
 }
 
-@media only screen and (max-width: 900px) {
-    img.ClassSC {
-        width: 550px;
-        height: 370px;
-    }
-}
-
-@media only screen and (max-width: 620px) {
-    img.ClassSC {
-        width: 330px;
-        height: 230px;
-    }
-}
-
 @media (min-aspect-ratio:16/9) {
     .Background-VDO{
         width: 100%;
