@@ -122,4 +122,38 @@
         <p>&copy; ลิขสิทธิ์ สิรภพ 2566 . <a style="color: white;" href="LICENSE">สงวนลิขสิทธิ์ทั้งหมด</a> .</p>
     </footer>
 </body>
+<script type="module">
+    /*
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+    import { getMessaging } from "firebase/messaging";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyA6K0imygRLWWPtTt6j_zwZ8nA7G19OVjw",
+        authDomain: "yorwor64slash10.firebaseapp.com",
+        databaseURL: "https://yorwor64slash10-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "yorwor64slash10",
+        storageBucket: "yorwor64slash10.appspot.com",
+        messagingSenderId: "287346973155",
+        appId: "1:287346973155:web:1b068290bf6d72c32368d6",
+        measurementId: "G-XEKJMJEPD9"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const messaging = getMessaging(app);
+    */
+</script>
+<script>
+    function requestPermission() {  
+        console.log('Requesting permission...');
+        Notification.requestPermission().then(
+            (permission) => {
+            if (permission === 'granted') {
+            console.log('Notification permission granted.');
+            }
+        }
+        )
+    }
+</script>
 </html>

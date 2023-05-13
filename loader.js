@@ -5,6 +5,7 @@ window.onload = function() {
 
     Load.style.display = "none";
     Bg.style.display = "block";
+    requestPermission()
 
     var path = window.location.pathname;
     var page = path.split("/").pop();
