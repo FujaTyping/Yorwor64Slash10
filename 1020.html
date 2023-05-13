@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ม.3/10 | 1020</title>
+    <meta name="description" content="เว็ปห้องของ ม.3/10 - โรงเรียนหาดใหญ่วิทยาลัย">
+    <link rel="icon" href="assets/ตรีจักร.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+
+    *{
+        font-family: Mitr;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    footer {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0);
+        color: #ffffff;
+        padding: 10px;
+    } 
+
+    div.Start {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(37, 36, 36, 0.8);
+    }
+
+    .Header {
+        font-size: 80px;
+    }
+
+    .Header2 {
+        font-size: 40px;
+    }
+
+    .Inl {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media only screen and (max-width: 900px) {
+        .Header {
+        font-size: 40px;
+        }
+        .Header2 {
+            font-size: 30px;
+        }
+    }
+
+    .background-VDO{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    @media (min-aspect-ratio:16/9) {
+        .background-VDO{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-aspect-ratio:16/9) {
+        .background-VDO{
+            width: auto;
+            height: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="Start">
+        <video autoplay loop muted plays-inline class="background-VDO">
+            <source src="assets/404.mp4" type="video/mp4">
+        </video>
+        <div style="margin-left: 30px;" class="main">
+            <h1 class="Header">1020 - Access Denied</h1>
+            <h1 class="Header2">การเข้าถึงถูกปฏิเสธ</h1>
+            <div onclick="window.location.href='/';" class="Inl">
+                <span class="material-symbols-outlined">home</span>&nbsp;
+                <h2>กลับไปหน้าหลัก</h2>
+            </div>
+    </div>
+    <footer>
+        <p>&copy; ลิขสิทธิ์ สิรภพ 2566 . <a style="color: white;" href="LICENSE">สงวนลิขสิทธิ์ทั้งหมด</a> .</p>
+    </footer>
+</body>
+</html>

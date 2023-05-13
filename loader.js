@@ -5,6 +5,7 @@ window.onload = function() {
 
     Load.style.display = "none";
     Bg.style.display = "block";
+    /*window.location.href = '/1020.html';*/
     requestPermission()
 
     var path = window.location.pathname;
