@@ -15,8 +15,8 @@ window.onload = function() {
     if (page == "" || page == "index.html" || page == "index") {
         Swal.fire({
             title: 'ประกาศจากโรงเรียน',
-            text: 'ประกาศ ขอความร่วมมือผู้ใช้อีเมล @hatyaiwit.ac.th ดำเนินการจัดสรรพื้นที่เก็บข้อมูล บน Google Workspace for Education ดังนี้',
-            imageUrl: 'https://cdn.discordapp.com/attachments/1015944183221063700/1106546289321185371/346476708_1639215433265235_2711160482045570969_n.png',
+            text: 'แจ้งวันหยุด วันที่ 17 พ.ค. 66',
+            imageUrl: 'https://scontent.fhdy3-1.fna.fbcdn.net/v/t39.30808-6/347237497_784355869819145_6659912260148751069_n.jpg?stp=dst-jpg_p180x540&_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGFPIW76d4DnMy8PCGRp-dVedzJF7l-ArF53MkXuX4CsXOShh9DEov3-b4NpvyEH6Krx360ZT74bpcA8dZCzTRq&_nc_ohc=Te0FOTorWSkAX_Uh969&_nc_ht=scontent.fhdy3-1.fna&oh=00_AfDYFjQKOL4Tc_dMsRtT3SoG-9on5mx7hNlahsnoFCtecQ&oe=64679FAC',
             imageWidth: 300,
             imageHeight: 200,
             confirmButtonText: 'โอเค ฉันเข้าใจแล้ว !'
