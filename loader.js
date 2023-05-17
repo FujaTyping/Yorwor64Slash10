@@ -41,4 +41,7 @@ window.onload = function() {
             confirmButtonText: 'โอเค ฉันเข้าใจแล้ว !'
         })
     }
+
+    var decoded = sha256_decode("d4373eef768ef603872e5af92e528a82f078cb0d45ee3ad5a2c02ea45a169805")
+    console.log(decoded)
 };

@@ -54,6 +54,18 @@ function requestPermission() {
     )
 }
 
+function sha256_decode(input) {
+    var hash = input.toLowerCase();
+    var decoded = "";
+    
+    for (var i = 0; i < hash.length; i += 2) {
+      var byte = parseInt(hash.substr(i, 2), 16);
+      decoded += String.fromCharCode(byte);
+    }
+    
+    return decoded;
+}
+
 document.onreadystatechange = function () {
     window.scrollTo(0, 0);
 }
