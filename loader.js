@@ -9,6 +9,25 @@ window.onload = function() {
     /*window.location.href = '/401.html';*/
     requestPermission()
 
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    
+    /*
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+    
+    var time = hours + ":" + minutes;
+    
+    if (time >= "16:30" && time <= "18:30") {
+        console.log('In time')
+        window.location.href = '/custom/401.html';
+    } else {
+        console.log('Not in time')
+    }
+    */
+
     var path = window.location.pathname;
     var page = path.split("/").pop();
     console.log(page)

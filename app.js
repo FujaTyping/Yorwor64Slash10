@@ -43,6 +43,17 @@ function NoticeLog () {
     })
 };
 
+function requestPermission() {  
+    console.log('Requesting permission...');
+    Notification.requestPermission().then(
+        (permission) => {
+        if (permission === 'granted') {
+        console.log('Notification permission granted.');
+        }
+    }
+    )
+}
+
 document.onreadystatechange = function () {
     window.scrollTo(0, 0);
 }
