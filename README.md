@@ -1,4 +1,4 @@
 # เว็ปห้อง ม.3/10 - โรงเรียนหาดใหญ่วิทยาลัย
 
 - ม.3/10 - ญ.ว.
-- Private Project
+- For educational use only
