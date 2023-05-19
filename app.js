@@ -54,16 +54,24 @@ function requestPermission() {
     )
 }
 
-function sha256_decode(input) {
-    var hash = input.toLowerCase();
-    var decoded = "";
-    
-    for (var i = 0; i < hash.length; i += 2) {
-      var byte = parseInt(hash.substr(i, 2), 16);
-      decoded += String.fromCharCode(byte);
+function caesar_decode(input,hash) {
+    var encodedMessage = input
+    var shift = hash
+    var decodedMessage = '';
+
+    for (var i = 0; i < encodedMessage.length; i++) {
+      var charCode = encodedMessage.charCodeAt(i);
+
+      if (charCode >= 65 && charCode <= 90) {
+        decodedMessage += String.fromCharCode(((charCode - 65 - shift + 26) % 26) + 65);
+      } else if (charCode >= 97 && charCode <= 122) {
+        decodedMessage += String.fromCharCode(((charCode - 97 - shift + 26) % 26) + 97);
+      } else {
+        decodedMessage += encodedMessage.charAt(i);
+      }
     }
-    
-    return decoded;
+
+    return decodedMessage ;
 }
 
 document.onreadystatechange = function () {
