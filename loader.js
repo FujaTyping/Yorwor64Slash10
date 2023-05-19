@@ -13,7 +13,6 @@ window.onload = function() {
     var hours = currentTime.getHours();
     var minutes = currentTime.getMinutes();
     
-    /*
     if (minutes < 10) {
         minutes = "0" + minutes;
     }
@@ -26,7 +25,6 @@ window.onload = function() {
     } else {
         console.log('Not in time')
     }
-    */
 
     var path = window.location.pathname;
     var page = path.split("/").pop();
@@ -34,17 +32,25 @@ window.onload = function() {
     if (page == "" || page == "index.html" || page == "index") {
         var currentDate = new Date();
 
-        var startDate = new Date("2023-05-17");
-        var endDate = new Date("2023-05-18");
+        var startDate = new Date("2023-05-19");
+        var endDate = new Date("2023-05-31");
 
         if (currentDate >= startDate && currentDate <= endDate) {
             Swal.fire({
-                title: 'ประกาศจากโรงเรียน',
-                text: 'แจ้งวันหยุด วันที่ 17 พ.ค. 66',
-                imageUrl: 'https://scontent.fhdy3-1.fna.fbcdn.net/v/t39.30808-6/347237497_784355869819145_6659912260148751069_n.jpg?stp=dst-jpg_p180x540&_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGFPIW76d4DnMy8PCGRp-dVedzJF7l-ArF53MkXuX4CsXOShh9DEov3-b4NpvyEH6Krx360ZT74bpcA8dZCzTRq&_nc_ohc=Te0FOTorWSkAX_Uh969&_nc_ht=scontent.fhdy3-1.fna&oh=00_AfDYFjQKOL4Tc_dMsRtT3SoG-9on5mx7hNlahsnoFCtecQ&oe=64679FAC',
+                title: 'เตือนล่วงหน้า 2 สัปดาห์',
+                text: 'การเลือกชุมนม และ ภาษาที่ 3\nเลือกที่เว็ป : http://backend.zchoolmate.com/c/yorwor/login/auth',
+                imageUrl: 'https://cdn.discordapp.com/attachments/1099034836628410398/1109139652419526666/image.png',
                 imageWidth: 300,
-                imageHeight: 200,
-                confirmButtonText: 'โอเค ฉันเข้าใจแล้ว !'
+                imageHeight: 150,
+                confirmButtonText: 'โอเค ไปที่เว็ปเลย !',
+                showCancelButton: true,
+                cancelButtonText: "ไม่ละ ขอบคุณ",
+                footer: '<e style="color: red;text-align: center;">ข้อมูลอาจจะมีการเปลื่ยนแปลงได้ตลอดเวลา</e><a style="color: gray;text-align: center;" href="https://www.hatyaiwit.ac.th/files/com_news/2023-05_5a239cf8f719dc9.pdf">กดที่นี้เพื่อดูรายวิชาทั้งหมดในชุมนม</a><a style="color: gray;text-align: center;" href="https://www.hatyaiwit.ac.th/files/com_news/2022-05_680c37bad1cc0f3.pdf">กดที่นี้เพื่อดูวิธีการเลือกชุมนม</a>'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    alert('ลิ้งค์นี้จะพาคุณไปที่ backend.zchoolmate.com (เว็ปภายนอก)\nหากคุณต้องการไปที่นั้นกด OK')
+                    window.location.href = 'http://backend.zchoolmate.com/c/yorwor/login/auth';
+                }
             })
             console.log("In date");
         } else {
