@@ -48,21 +48,21 @@ window.onload = function() {
 
         if (currentDate >= startDate && currentDate <= endDate) {
             Swal.fire({
-                title: 'เตือนล่วงหน้า 2 สัปดาห์',
-                text: 'การเลือกชุมนม และ ภาษาที่ 3\nเลือกที่เว็ป : http://backend.zchoolmate.com/c/yorwor/login/auth',
-                imageUrl: 'https://cdn.discordapp.com/attachments/1099034836628410398/1109139652419526666/image.png',
+                title: 'เตือนล่วงหน้าวัน จันทร์ กับ อังคาร',
+                text: 'การเลือกชุมนม และ ภาษาที่ 3\nเลือกที่เว็ป หรือ อาจจะเลือกที่ห้องของชุมชมนั้นก็ไม่แน่นใจ รอดูข่าวอีกทีนึง',
+                /*imageUrl: 'https://cdn.discordapp.com/attachments/1099034836628410398/1109139652419526666/image.png',*/
                 imageWidth: 300,
                 imageHeight: 150,
-                confirmButtonText: 'โอเค ไปที่เว็ปเลย !',
-                showCancelButton: true,
+                confirmButtonText: 'โอเค !',
+                /*showCancelButton: true,*/
                 cancelButtonText: "ไม่ละ ขอบคุณ",
                 footer: '<e style="color: red;text-align: center;">ข้อมูลอาจจะมีการเปลื่ยนแปลงได้ตลอดเวลา</e><a style="color: gray;text-align: center;" href="https://www.hatyaiwit.ac.th/files/com_news/2023-05_5a239cf8f719dc9.pdf">กดที่นี้เพื่อดูรายวิชาทั้งหมดในชุมนม</a><a style="color: gray;text-align: center;" href="https://www.hatyaiwit.ac.th/files/com_news/2022-05_680c37bad1cc0f3.pdf">กดที่นี้เพื่อดูวิธีการเลือกชุมนม</a>'
-            }).then((result) => {
+            })/*.then((result) => {
                 if (result.isConfirmed) {
                     alert('ลิ้งค์นี้จะพาคุณไปที่ backend.zchoolmate.com (เว็ปภายนอก)\nหากคุณต้องการไปที่นั้นกด OK')
                     window.location.href = 'http://backend.zchoolmate.com/c/yorwor/login/auth';
                 }
-            })
+            })*/
             console.log("In date");
         } else {
             console.log("Not in date");
