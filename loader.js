@@ -9,21 +9,32 @@ window.onload = function() {
     /*window.location.href = '/401.html';*/
     requestPermission()
 
-    var currentTime = new Date();
-    var hours = currentTime.getHours();
-    var minutes = currentTime.getMinutes();
-    
-    if (minutes < 10) {
-        minutes = "0" + minutes;
-    }
-    
-    var time = hours + ":" + minutes;
-    
-    if (time >= "16:00" && time <= "19:00") {
-        console.log('In time')
-        window.location.href = '/custom/401.html';
+    var today = new Date();
+    var day = today.getDay();
+
+    var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var currentDay = daysOfWeek[day];
+
+    if (currentDay === "Wednesday") {
+        var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        
+        if (minutes < 10) {
+            minutes = "0" + minutes;
+        }
+        
+        var time = hours + ":" + minutes;
+        
+        if (time >= "16:00" && time <= "19:00") {
+            console.log('In time')
+            window.location.href = '/custom/401.html';
+        } else {
+            console.log('Not in time')
+        }
+        console.log("Wednesday!");
     } else {
-        console.log('Not in time')
+        console.log("Not Wednesday!");
     }
 
     var path = window.location.pathname;

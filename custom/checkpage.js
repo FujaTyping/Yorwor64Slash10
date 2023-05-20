@@ -20,7 +20,7 @@ window.onload = function() {
           }
         }
   
-        console.log("The real reson is : "+decodedMessage+" (Try to translate)"+"\n\nถ้าผมเดือดร้อน คนอื่นก็ต้องเดือดร้อนด้วย ไม่ยอมเดือดร้อนคนเดี่ยวหรอนะ :P")
+        console.log("The real reson is : "+decodedMessage+" (Try to translate)")
     }
 
 };
