@@ -1,163 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>ม.3/10 | หน้าหลัก</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="https://cdn.discordapp.com/attachments/1071401485239332864/1109792299539505163/E0B895E0B8A3E0B8B5E0B888E0B8B1E0B881E0B8A3.png"
+        type="image/x-icon">
+    <title>Hatyaiwit - ม.3/10</title>
     <meta name="description" content="เว็ปห้องของ ม.3/10 - โรงเรียนหาดใหญ่วิทยาลัย">
-    <link rel="icon" href="assets/ตรีจักร.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="index.css" rel="stylesheet" type="text/css">
-    <link href="loader.css" rel="stylesheet" type="text/css">
-    <link href="assets/nav.css" rel="stylesheet" type="text/css">
-    <link href="assets/button.css" rel="stylesheet" type="text/css">
-    <script src="loader.js"></script>
-    <script src="app.js"></script>
-    <script src="assets/nav.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
 </head>
-<script type="text/javascript">
-    var sc_project=12879277; 
-    var sc_invisible=0; 
-    var sc_text=2;
-    var sc_security="33452225"; 
-    var scJsHost = "https://";
-    document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
-    "statcounter.com/counter/counter.js'></"+"script>");
-</script>
+
 <body>
-    <div id="loader" class="Start">
-        <span class="loader"></span>
+    <header style="padding: 20px;background-color: rgb(45, 118, 255);"
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img width="40" height="40"
+                    src="https://cdn.discordapp.com/attachments/1071401485239332864/1109792299539505163/E0B895E0B8A3E0B8B5E0B888E0B8B1E0B881E0B8A3.png">
+            </a>
+        </div>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a style="color: white;" href="/" class="nav-link px-2">หน้าหลัก</a></li>
+            <li><a style="color: white;" href="/page/homework.html" class="nav-link px-2">การบ้าน</a></li>
+            <li><a style="color: white;" href="/page/classcode.html" class="nav-link px-2">รหัสห้องเรียน</a></li>
+            <li><a style="color: white;" href="/page/event.html" class="nav-link px-2">บันทึกกิจกรรม</a></li>
+        </ul>
+        <div class="col-md-3 text-end">
+            <button onclick="window.location.href = '/auth/login.html';" style="background-color: rgb(255, 22, 22);color: white;" type="button" class="btn">ล็อกอิน</button>
+        </div>
+    </header>
+    <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">ประกาศ - Announcement</h2>
+        <br>
+        <iframe style="border: none;" width="100%" height="60px" src="https://script.google.com/macros/s/AKfycbwlpbeUeVy0tofCzy2J4J6TMCMiDaaiaLNITUEmU2XzCjz2mq_v_YycCwFfH7zTodHtug/exec"></iframe>
     </div>
-    <div class="Mainstart">
-        <video style="display: none;" id="bg" autoplay loop muted plays-inline class="Background-VDO">
-            <source src="assets/Background.mp4" type="video/mp4">
-        </video>
-        <div>
-            <nav>
-                <div class="logo">
-                  <img src="assets/ตรีจักร.ico">
-                  <h1>โรงเรียนหาดใหญ่วิทยาลัย</h1>
-                </div>
-            </nav>
-            <div style="line-height: 1;">
-                <h1 style="font-size: 40px;" >เว็ปห้อง ม.3/10</h1>
-                <h3>โรงเรียนหาดใหญ่วิทยาลัย - ไม่ทางการ</h3>
-                <p>เลื่อนลงข้างล่างเพื่อดูข้อมูลเพิ่มเติม</p>
-                <h3>.....</h3>
-            </div>
-            <div style="line-height: 1;">
-                <h1>📢 ประกาศ</h1>
-                <p>อัพเดทข้อมูลแบบ Real time</p>
-            </div>
-            <iframe style="border: none; margin-top: 13px;" width="90%" height="60px" src="https://script.google.com/macros/s/AKfycbwlpbeUeVy0tofCzy2J4J6TMCMiDaaiaLNITUEmU2XzCjz2mq_v_YycCwFfH7zTodHtug/exec"></iframe>
-            <div style="line-height: 1;">
-                <h1>🚀 แถบนำทาง</h1>
-                <p>ใช้แถบนำทางเพื่อย้ายไปหน้าอื่นๆได้</p>
-            </div>
-            <button onclick="window.location.href = 'index.html';" class="Navbutton">
-                <span class="material-symbols-outlined">Home</span>&nbsp;<strong>หน้าหลัก</strong>
-            </button>
-            <button onclick="window.location.href = '#ScSd';" style="width: 9em;" class="Navbutton">
-                <span class="material-symbols-outlined">Calendar_month</span>&nbsp;<strong>ตารางเรียน</strong>
-            </button>
-            <button onclick="window.location.href = 'pages/homework.html';" style="width: 16em;" class="Navbutton">
-                <span class="material-symbols-outlined">Book</span>&nbsp;<strong>การบ้าน และ ประวัติการบ้าน</strong>
-            </button> 
-            <button onclick="window.location.href = 'pages/event.html';" style="width: 11em;" class="Navbutton">
-                <span class="material-symbols-outlined">Celebration</span>&nbsp;<strong>บันทึกกิจกรรม</strong>
-            </button> <br>
-            <button onclick="window.location.href = 'pages/classcode.html';" class="Navbutton" style="width: 15.5em;">
-                <span class="material-symbols-outlined">School</span>&nbsp;<strong>รหัสห้องเรียน และ ไลน์กลุ่ม</strong>
-            </button>
-            <button onclick="window.location.href = 'security/login.html';" class="Navbutton">
-                <span class="material-symbols-outlined">Login</span>&nbsp;<strong>ล็อกอิน</strong>
-            </button>
-            <button onclick="window.location.href = '#Sl';" class="Navbutton" style="width: 13em;">
-                <span class="material-symbols-outlined">Link</span>&nbsp;<strong>ลิ้งค์เกี่ยวกับโรงเรียน</strong>
-            </button>
-            <div style="line-height: 1; margin-top: 30px;">
-                <h1>🌐 เกี่ยวกับห้องของเรา</h1>
-                <p>ข้อมูลที่เกี่ยวกับห้อง ม.3/10 ทั้งหมด</p>
-                <h4>ครูที่ปรึกษา : ครู กานต์พิชชา บุญรังศรี (วิทยาศาสตร์)</h4>
-                <h4>ครูที่ปรึกษา : ครู ณัฐยา ทิพรัตน์ (ศิลปะ)</h4>
-                <button onclick="window.location.href = 'pages/classcode.html';" class="Navbutton" style="width: 11em;">
-                    <span class="material-symbols-outlined">Phone_callback</span>&nbsp;<strong>ข้อมูลการติดต่อ</strong>
-                </button>
-                <button onclick="ClassWhite()" class="Navbutton" style="width: 10em;">
-                    <span class="material-symbols-outlined">Eco</span>&nbsp;<strong>ห้องเรียนสีขาว</strong>
-                </button>
-                <button onclick="window.location.href = 'about/webapp.html';" class="Navbutton" style="width: 12em;">
-                    <span class="material-symbols-outlined">Language</span>&nbsp;<strong>เกี่ยบกับ Webapp</strong>
-                </button>
-            </div>
-            <div style="line-height: 1; margin-top: 30px;">
-                <h1 id="ScSd">🧩 ตารางเรียน</h1>
-                <p>คลิกที่รูปภาพเพื่อดูภาพเต็ม</p>
-                <p style="color: red;">อัพเดทล่าสุด : 10/05/2566</p>
-                <p style="color: yellow;">15-19 พ.ค. 2566 : เปิดภาคเรียนที่ 1/2566  ทดลองใช้สัปดาห์ที่ 1</p>
-            </div>
-            <img width="80%" onclick="window.location.href = 'cdn/Table.png';" src="cdn/Table.png">
-            <div style="line-height: 1; margin-top: 30px;">
-                <h1 id="Sl">ลิ้งค์เกี่ยวกับโรงเรียน 🔗</h1>
-                <p>ลิ้งค์ที่ใช้ในโรงเรียน</p>
-            </div>
-            <button onclick="window.location.href = 'https://yorworplatform.com';" style="width: 12em;" class="Navbutton">
-                <span><img width="27px" height="28px" src="assets/ตรีจักร.ico"></span>&nbsp;<strong>Yorwor Platform</strong>
-            </button>
-            <button onclick="window.location.href = 'https://sites.google.com/hatyaiwit.ac.th/innovative-center/หนาหลก';" style="width: 13em;" class="Navbutton">
-                <span><img width="27px" height="28px" src="assets/ตรีจักร.ico"></span>&nbsp;<strong>Innovative Center</strong>
-            </button>
-            <button onclick="window.location.href = 'https://www.hatyaiwit.ac.th';" style="width: 9em;" class="Navbutton">
-                <span><img width="27px" height="28px" src="assets/ตรีจักร.ico"></span>&nbsp;<strong>เว็ปโรงเรียน</strong>
-            </button>
-            <button onclick="window.location.href = 'http://202.129.48.202';" style="width: 12em;" class="Navbutton">
-                <span class="material-symbols-outlined">Search</span>&nbsp;<strong>ระเบียนผลการเรียน</strong>
-            </button>
-            <!-- Rec Sec here -->
-            <!--
-            <div style="line-height: 1; margin-top: 30px;">
-                <h1>🤩 คำแนะนำ</h1>
-                <p>คำแนะนำที่มีประโยชน์</p>
-                <button onclick="window.location.href = 'pages/recommend.html';" class="Navbutton" style="width: 8em;">
-                    <span class="material-symbols-outlined">Star</span>&nbsp;<strong>คำแนะนำ</strong>
-                </button>
-            </div>
-            -->
-            <!-- Stats Counter -->
-            <div style="margin-top: 10px;" class="statcounter">
-                <a title="Web Analytics" href="https://statcounter.com/" target="_blank">
-                    <img class="statcounter" src="https://c.statcounter.com/12879277/0/33452225/0/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade">
-                </a>
-            </div>
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">ม.3/10 - โรงเรียนหาดใหญ่วิทยาลัย</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">เว็บไซต์ห้องเรียนของ ม.3/10 โรงเรียนหาดใหญ่วิทยาลัย เป็นแหล่งรวบรวมข้อมูลและแหล่งความรู้สำหรับนักเรียนในห้องเรียนนี้เท่านั้น ไม่เกี่ยวข้องกับโรงเรียนใดๆ ประกอบด้วยประกาศจากครู ตารางสอน การบ้านและงานที่ได้รับมอบหมาย และวัตถุประสงค์การเรียน และเป้าหมายการเรียน</p>
         </div>
     </div>
-    <br> <br>
-    <footer>
-        <p>&copy; ลิขสิทธิ์ สิรภพ 2566 . <a style="color: white;" href="LICENSE">สงวนลิขสิทธิ์ทั้งหมด</a> .</p>
+    <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">ตารางเรียน - Timetable</h2>
+        <br>
+        <h4 style="color: red;">อัพเดทล่าสุด : 10/05/2566</h4>
+        <p>15-19 พ.ค. 2566 : เปิดภาคเรียนที่ 1/2566 ทดลองใช้สัปดาห์ที่ 1</p>
+        <br>
+        <img src="/cdn/Table.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+    </div>
+    <footer style="padding: 20px;" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2022-2023 Siraphop Sukchu</p>
+        <a href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+        </a>
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="https://yorworplatform.com" class="nav-link px-2 text-body-secondary">Yorwor Platform</a></li>
+            <li class="nav-item"><a href="https://sites.google.com/hatyaiwit.ac.th/innovative-center/หนาหลก" class="nav-link px-2 text-body-secondary">Innovative Center</a></li>
+            <li class="nav-item"><a href="https://www.hatyaiwit.ac.th" class="nav-link px-2 text-body-secondary">เว็ปโรงเรียน</a></li>
+            <li class="nav-item"><a href="http://202.129.48.202" class="nav-link px-2 text-body-secondary">ระเบียนผลการเรียน</a></li>
+            <li class="nav-item"><a href="/about/webapp.html" class="nav-link px-2 text-body-secondary">About webapp</a></li>
+        </ul>
     </footer>
 </body>
-<script type="module">
-    /*
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
-    import { getMessaging } from "firebase/messaging";
 
-    const firebaseConfig = {
-        apiKey: "AIzaSyA6K0imygRLWWPtTt6j_zwZ8nA7G19OVjw",
-        authDomain: "yorwor64slash10.firebaseapp.com",
-        databaseURL: "https://yorwor64slash10-default-rtdb.asia-southeast1.firebasedatabase.app",
-        projectId: "yorwor64slash10",
-        storageBucket: "yorwor64slash10.appspot.com",
-        messagingSenderId: "287346973155",
-        appId: "1:287346973155:web:1b068290bf6d72c32368d6",
-        measurementId: "G-XEKJMJEPD9"
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-    const messaging = getMessaging(app);
-    */
-</script>
 </html>
