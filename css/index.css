@@ -3,3 +3,10 @@
 * {
     font-family: Mitr;
 }
+
+#CardHatyaiwit {
+    background-image: url('https://cdn.discordapp.com/attachments/1071401485239332864/1110545083599687681/header1_2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
