@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
     const Load = document.querySelectorAll("#IframeLoader");
     const Bg = document.querySelectorAll("#DataIframe");
 

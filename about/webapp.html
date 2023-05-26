@@ -34,22 +34,94 @@
             <li><a style="color: white;" href="/page/event.html" class="nav-link px-2">บันทึกกิจกรรม</a></li>
         </ul>
         <div class="col-md-3 text-end">
-            <button onclick="window.location.href = '/auth/login.html';" style="background-color: rgb(255, 22, 22);color: white;" type="button" class="btn">ล็อกอิน</button>
+            <button onclick="window.location.href = '/auth/v1/login.html';"
+                style="background-color: rgb(255, 22, 22);color: white;" type="button" class="btn">ล็อกอิน</button>
         </div>
     </header>
     <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="https://th.bing.com/th/id/R.b15eedbdafbbdbca3249e3942f4faf3b?rik=ZlVKs8jqm%2frY8w&pid=ImgRaw&r=0" alt="" width="72" height="72">
+        <img class="d-block mx-auto mb-4"
+            src="https://th.bing.com/th/id/R.b15eedbdafbbdbca3249e3942f4faf3b?rik=ZlVKs8jqm%2frY8w&pid=ImgRaw&r=0"
+            alt="" width="72" height="72">
         <h1 class="display-5 fw-bold text-body-emphasis">Project Name : 3Tub10-Webapp</h1>
         <h3 class="display-10 fw-bold text-body-emphasis">Open source projects</h3>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">The 3Tub10-Webapp project aims to develop a comprehensive and user-friendly website for the m.3/10 school, with a focus on educational purposes. This web application will serve as an online platform to enhance the learning experience and provide valuable resources for students, teachers, and parents.</p>
+            <p class="lead mb-4">The 3Tub10-Webapp project aims to develop a comprehensive and user-friendly website for
+                the m.3/10 school, with a focus on educational purposes. This web application will serve as an online
+                platform to enhance the learning experience and provide valuable resources for students, teachers, and
+                parents.</p>
         </div>
         <br>
-        <button onclick="window.location.href = 'https://github.com/FujaTyping/3Tub10-Webapp';" style="background-color: rgb(11, 13, 138);color: white;" type="button" class="btn">View on Github</button>
-        <button onclick="window.location.href = 'https://github.com/sponsors/FujaTyping';" style="background-color: rgb(11, 13, 138);color: white;" type="button" class="btn">Donate</button>
-        <button onclick="window.location.href = 'https://github.com/FujaTyping/3Tub10-Webapp/issues';" style="background-color: rgb(11, 13, 138);color: white;" type="button" class="btn">Report issues</button>
+        <button onclick="window.location.href = 'https://github.com/FujaTyping/3Tub10-Webapp';"
+            style="background-color: rgb(45, 118, 255);color: white;" type="button" class="btn">View on Github</button>
+        <button onclick="window.location.href = 'https://github.com/sponsors/FujaTyping';"
+            style="background-color: rgb(45, 118, 255);color: white;" type="button" class="btn">Donate</button>
+        <button onclick="window.location.href = 'https://github.com/FujaTyping/3Tub10-Webapp/issues';"
+            style="background-color: rgb(45, 118, 255);color: white;" type="button" class="btn">Report issues</button>
     </div>
-    <footer style="padding: 20px;" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">คำถามที่พบบ่อย - FAQ</h2>
+        <br>
+        <article class="my-3" id="accordion">
+            <div>
+                <div class="bd-example-snippet bd-code-snippet">
+                    <div class="bd-example">
+                        <div class="accordion" id="accordionExample">
+                            <div style="background-color: rgb(45, 118, 255);color: white;" class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button style="background-color: rgb(45, 118, 255);color: white;"
+                                        class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        ทำไมใช้ Bootstrap ?
+                                    </button>
+                                </h4>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample" style="">
+                                    <div class="accordion-body">
+                                        I'm not good in UI
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="background-color: rgb(45, 118, 255);color: white;" class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button style="background-color: rgb(45, 118, 255);color: white;"
+                                        class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        ข้อมูลทั้งหมดเก็บอยู่ที่ไหน ?
+                                    </button>
+                                </h4>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample" style="">
+                                    <div class="accordion-body">
+                                        ฐานข้อมูลทั้งหมดจะอยู่ที่ <strong>https://docs.google.com/spreadsheets</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="background-color: rgb(45, 118, 255);color: white;" class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button style="background-color: rgb(45, 118, 255);color: white;"
+                                        class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        หน้า 404 คืออะไร ?
+                                    </button>
+                                </h4>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample" style="">
+                                    <div class="accordion-body">
+                                        หน้า 404
+                                        หมายถึงหน้าเว็บที่แสดงข้อความแจ้งว่าไม่พบหน้าที่คุณกำลังพยายามเข้าถึงในเว็ป
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    </div>
+    <footer style="padding: 20px;"
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-body-secondary">© 2022-2023 Siraphop Sukchu</p>
         <a href="/"
             class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
@@ -58,11 +130,16 @@
             </svg>
         </a>
         <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="https://yorworplatform.com" class="nav-link px-2 text-body-secondary">Yorwor Platform</a></li>
-            <li class="nav-item"><a href="https://sites.google.com/hatyaiwit.ac.th/innovative-center/หนาหลก" class="nav-link px-2 text-body-secondary">Innovative Center</a></li>
-            <li class="nav-item"><a href="https://www.hatyaiwit.ac.th" class="nav-link px-2 text-body-secondary">เว็ปโรงเรียน</a></li>
-            <li class="nav-item"><a href="http://202.129.48.202" class="nav-link px-2 text-body-secondary">ระเบียนผลการเรียน</a></li>
-            <li class="nav-item"><a href="/about/webapp.html" class="nav-link px-2 text-body-secondary">About webapp</a></li>
+            <li class="nav-item"><a href="https://yorworplatform.com" class="nav-link px-2 text-body-secondary">Yorwor
+                    Platform</a></li>
+            <li class="nav-item"><a href="https://sites.google.com/hatyaiwit.ac.th/innovative-center/หนาหลก"
+                    class="nav-link px-2 text-body-secondary">Innovative Center</a></li>
+            <li class="nav-item"><a href="https://www.hatyaiwit.ac.th"
+                    class="nav-link px-2 text-body-secondary">เว็ปโรงเรียน</a></li>
+            <li class="nav-item"><a href="http://202.129.48.202"
+                    class="nav-link px-2 text-body-secondary">ระเบียนผลการเรียน</a></li>
+            <li class="nav-item"><a href="/about/webapp.html" class="nav-link px-2 text-body-secondary">About webapp</a>
+            </li>
         </ul>
     </footer>
 </body>
