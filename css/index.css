@@ -10,3 +10,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.dropdown-item:focus {
+    background-color: rgb(45, 118, 255);
+}
