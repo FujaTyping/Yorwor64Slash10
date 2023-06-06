@@ -31,8 +31,16 @@
         </div>
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a style="color: white;" href="/" class="nav-link px-2">หน้าหลัก</a></li>
-            <li><a style="color: white;" href="/page/homework.html" class="nav-link px-2">การบ้าน</a></li>
-            <li><a style="color: white;" href="/page/classcode.html" class="nav-link px-2">รหัสห้องเรียน</a></li>
+            <div class="btn-group">
+                <button style="color: white;" type="button" class="nav-link px-2 dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    ฝ่ายการเรียน
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/page/homework.html">การบ้าน</a></li>
+                    <li><a class="dropdown-item" href="/page/classcode.html">รหัสห้องเรียน</a></li>
+                </ul>
+            </div>
             <li><a style="color: white;" href="/page/event.html" class="nav-link px-2">บันทึกกิจกรรม</a></li>
             <div class="btn-group">
                 <button style="color: white;" type="button" class="nav-link px-2 dropdown-toggle"
@@ -41,10 +49,7 @@
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/docs/eco.html">ห้องเรียนสีขาว</a></li>
-                    <!--
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    -->
+                    <li><a class="dropdown-item" href="/docs/class.html">แผนผังห้องเรียน</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
@@ -85,11 +90,6 @@
                 <div class="carousel-item active">
                     <img src="https://cdn.discordapp.com/attachments/1099042961225961553/1114411984910307378/image_8.png"
                         class="d-block w-100" alt="...">
-                    <div style="background-color: rgba(0,0,0,0.4);border-radius: 25px;"
-                        class="carousel-caption d-none d-md-block">
-                        <h5><strong>ทดลองวิทยาศาสตร์ 🧪🧪</strong></h5>
-                        <p><strong>การทดลอง " สร้างบ้านนกเพนกวิน " ทำยังไงให้นำแข็งละลายน้อยที่สุด !</strong></p>
-                    </div>
                 </div>
                 <!--
                     <div class="carousel-item">
