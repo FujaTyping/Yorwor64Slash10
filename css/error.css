@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.centered-div {
+    background-color: lightgray;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+@media (min-width: 768px) {
+    .centered-div {
+        max-width: 600px;
+        max-height: 400px;
+    }
+}
