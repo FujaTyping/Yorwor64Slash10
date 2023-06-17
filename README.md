@@ -13,4 +13,4 @@
 - **Version Control** : Git
 
 # ใบอนุญาต
-โครงการนี้ได้รับอนุญาตภายใต้ใบอนุญาต [MIT](https://en.wikipedia.org/wiki/MIT_License)
+โครงการนี้ได้รับอนุญาตภายใต้ใบอนุญาต [GNU General Public License (GPL)](https://en.wikipedia.org/wiki/GNU_General_Public_License)
