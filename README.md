@@ -7,7 +7,7 @@
 - **ตารางเวลา** : ครูและนักเรียนสามารถดูและจัดการตารางเรียนและตารางเรียนได้
 
 # เทคโนโลยีที่ใช้
-- **Front-end** : HTML, CSS, JavaScript, bootstrap
+- **Front-end** : HTML, CSS, JavaScript, bootstrap, PHP
 - **Back-end** : Google app script
 - **Database** : Google Sheet
 - **Version Control** : Git
