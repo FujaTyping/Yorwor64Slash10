@@ -1,57 +1,193 @@
-.loader {
-    position: relative;
-    height: 100px;
-    width: 100%;
-    border-bottom: 3px solid rgb(45, 118, 255);
-    box-sizing: border-box;
-    animation: drawLine 4s linear infinite;
+/* Thanks @gustavofusco from uiverse.io */
+
+.pencil {
+    display: block;
+    width: 8em;
+    height: 8em;
 }
 
-.loader:before {
-    content: "";
-    position: absolute;
-    left: calc(100% + 14px);
-    bottom: -6px;
-    width: 16px;
-    height: 100px;
-    border-radius: 20px 20px 50px 50px;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(rgb(45, 118, 255) 6px, transparent 0),
-        linear-gradient(45deg, rgba(0, 0, 0, 0.02) 49%, white 51%),
-        linear-gradient(315deg, rgba(0, 0, 0, 0.02) 49%, white 51%),
-        linear-gradient(to bottom, #ffffff 10%, rgb(45, 118, 255) 10%, rgb(45, 118, 255) 90%, #ffffff 90%);
-    background-size: 3px 3px, 8px 8px, 8px 8px, 16px 88px;
-    background-position: center bottom, left 88px, right 88px, left top;
-    transform: rotate(25deg);
-    animation: pencilRot 4s linear infinite;
+.pencil__body1,
+.pencil__body2,
+.pencil__body3,
+.pencil__eraser,
+.pencil__eraser-skew,
+.pencil__point,
+.pencil__rotate,
+.pencil__stroke {
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-@keyframes drawLine {
+.pencil__body1,
+.pencil__body2,
+.pencil__body3 {
+    transform: rotate(-90deg);
+}
 
-    0%,
-    100% {
-        width: 0px
+.pencil__body1 {
+    animation-name: pencilBody1;
+}
+
+.pencil__body2 {
+    animation-name: pencilBody2;
+}
+
+.pencil__body3 {
+    animation-name: pencilBody3;
+}
+
+.pencil__eraser {
+    animation-name: pencilEraser;
+    transform: rotate(-90deg) translate(49px, 0);
+}
+
+.pencil__eraser-skew {
+    animation-name: pencilEraserSkew;
+    animation-timing-function: ease-in-out;
+}
+
+.pencil__point {
+    animation-name: pencilPoint;
+    transform: rotate(-90deg) translate(49px, -30px);
+}
+
+.pencil__rotate {
+    animation-name: pencilRotate;
+}
+
+.pencil__stroke {
+    animation-name: pencilStroke;
+    transform: translate(100px, 100px) rotate(-113deg);
+}
+
+/* Animations */
+@keyframes pencilBody1 {
+
+    from,
+    to {
+        stroke-dashoffset: 351.86;
+        transform: rotate(-90deg);
     }
 
+    50% {
+        stroke-dashoffset: 150.8;
+        /* 3/8 of diameter */
+        transform: rotate(-225deg);
+    }
+}
+
+@keyframes pencilBody2 {
+
+    from,
+    to {
+        stroke-dashoffset: 406.84;
+        transform: rotate(-90deg);
+    }
+
+    50% {
+        stroke-dashoffset: 174.36;
+        transform: rotate(-225deg);
+    }
+}
+
+@keyframes pencilBody3 {
+
+    from,
+    to {
+        stroke-dashoffset: 296.88;
+        transform: rotate(-90deg);
+    }
+
+    50% {
+        stroke-dashoffset: 127.23;
+        transform: rotate(-225deg);
+    }
+}
+
+@keyframes pencilEraser {
+
+    from,
+    to {
+        transform: rotate(-45deg) translate(49px, 0);
+    }
+
+    50% {
+        transform: rotate(0deg) translate(49px, 0);
+    }
+}
+
+@keyframes pencilEraserSkew {
+
+    from,
+    32.5%,
+    67.5%,
+    to {
+        transform: skewX(0);
+    }
+
+    35%,
+    65% {
+        transform: skewX(-4deg);
+    }
+
+    37.5%,
+    62.5% {
+        transform: skewX(8deg);
+    }
+
+    40%,
     45%,
-    55% {
-        width: 200px
+    50%,
+    55%,
+    60% {
+        transform: skewX(-15deg);
+    }
+
+    42.5%,
+    47.5%,
+    52.5%,
+    57.5% {
+        transform: skewX(15deg);
     }
 }
 
-@keyframes pencilRot {
+@keyframes pencilPoint {
 
-    0%,
-    45% {
-        bottom: -6px;
-        left: calc(100% + 14px);
-        transform: rotate(25deg);
+    from,
+    to {
+        transform: rotate(-90deg) translate(49px, -30px);
     }
 
-    55%,
-    100% {
-        bottom: -12px;
-        left: calc(100% + 16px);
-        transform: rotate(220deg);
+    50% {
+        transform: rotate(-225deg) translate(49px, -30px);
+    }
+}
+
+@keyframes pencilRotate {
+    from {
+        transform: translate(100px, 100px) rotate(0);
+    }
+
+    to {
+        transform: translate(100px, 100px) rotate(720deg);
+    }
+}
+
+@keyframes pencilStroke {
+    from {
+        stroke-dashoffset: 439.82;
+        transform: translate(100px, 100px) rotate(-113deg);
+    }
+
+    50% {
+        stroke-dashoffset: 164.93;
+        transform: translate(100px, 100px) rotate(-113deg);
+    }
+
+    75%,
+    to {
+        stroke-dashoffset: 439.82;
+        transform: translate(100px, 100px) rotate(112deg);
     }
 }
