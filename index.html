@@ -97,25 +97,13 @@
     <div id="footer-container"></div>
     <!-- Check admin -->
     <script src="/js/Endecrypt.js"></script>
+    <script src="/js/Admin.js"></script>
     <script type="text/javascript">
         var url = window.location.href;
         var key = decodeshif("?vyhdi=wvxfziy", "21")
 
         if (url.indexOf(`${key}`) !== -1) {
-            Swal.fire({
-                icon: 'warning',
-                title: 'ฟีเจอร์นี้อยู่ระหว่างการพัฒนา !',
-                text: "?admin=backend",
-                confirmButtonColor: 'rgb(45, 118, 255)',
-                showConfirmButton: false,
-                /* Custiom animation */
-                showClass: {
-                    popup: 'animate__animated animate__bounceInDown'
-                },
-                hideClass: {
-                    popup: 'animate__animated animate__bounceOutDown'
-                }
-            })
+            Indev()
         }
     </script>
 </body>
