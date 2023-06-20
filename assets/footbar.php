@@ -1,5 +1,10 @@
 <!-- Footer PHP -->
 
+<br>
+<div class="d-flex justify-content-center">
+    <button onclick="document.body.scrollTop = 0; document.documentElement.scrollTop = 0;"
+        style="background-color: rgb(45, 118, 255);color: white;" type="button" class="btn">⇧ กลับไปด้านบน</button>
+</div>
 <footer style="padding: 20px;" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <p class="col-md-4 mb-0 text-body-secondary">© 2022-2023 Siraphop Sukchu</p>
     <a href="/"

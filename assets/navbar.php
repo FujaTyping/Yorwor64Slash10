@@ -28,7 +28,7 @@
                 เอกสาร
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/docs/eco.html">ห้องเรียนสีขาว</a></li>
+                <li><a class="dropdown-item" href="/docs/white-classroom.html">ห้องเรียนสีขาว</a></li>
                 <li><a class="dropdown-item" href="/about/classroom.html">เกี่ยวกับห้องของเรา</a></li>
                 <li>
                     <hr class="dropdown-divider">
