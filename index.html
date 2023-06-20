@@ -96,10 +96,12 @@
     <!-- End Of Content -->
     <div id="footer-container"></div>
     <!-- Check admin -->
+    <script src="/js/Endecrypt.js"></script>
     <script type="text/javascript">
         var url = window.location.href;
+        var key = decodeshif("?vyhdi=wvxfziy", "21")
 
-        if (url.indexOf('?admin=backend') !== -1) {
+        if (url.indexOf(`${key}`) !== -1) {
             Swal.fire({
                 icon: 'warning',
                 title: 'ฟีเจอร์นี้อยู่ระหว่างการพัฒนา !',
