@@ -42,7 +42,7 @@ function Indev() {
                     popup: 'animate__animated animate__bounceOutDown'
                 },
             }).then((result) => {
-                window.location.href = '/backend.html/?Backend=Confirmed';
+                window.location.href = '/backend.html';
             });
         }
     });
