@@ -20,7 +20,24 @@
                 <li><a class="dropdown-item" href="/page/classcode.html">รหัสห้องเรียน</a></li>
             </ul>
         </div>
-        <li><a style="color: white;" href="/page/event.html" class="nav-link px-2">บันทึกกิจกรรม</a></li>
+        <div class="btn-group">
+            <button style="color: white;" type="button" class="nav-link px-2 dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                ฝ่ายกิจกรรม
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/page/event.html">บันทึกกิจกรรม</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button style="color: white;" type="button" class="nav-link px-2 dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                ฝ่ายการงาน
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/score.html">ดูคะแนนนักเรียน</a></li>
+            </ul>
+        </div>
         <li><a style="color: white;" href="/page/record.html" class="nav-link px-2">ความคิดเห็น</a></li>
         <div class="btn-group">
             <button style="color: white;" type="button" class="nav-link px-2 dropdown-toggle" data-bs-toggle="dropdown"
