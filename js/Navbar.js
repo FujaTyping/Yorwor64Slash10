@@ -9,3 +9,13 @@ fetch('/assets/navbar.php')
     .catch(error => {
         console.error('Error fetching /assets/navbar.php :', error);
     });
+
+function playmusic() {
+    const audioPlayer = document.getElementById('audioPlayer');
+
+    if (audioPlayer.paused) {
+        audioPlayer.play();
+    } else {
+        audioPlayer.pause();
+    }
+}
