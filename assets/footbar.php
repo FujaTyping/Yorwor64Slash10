@@ -25,4 +25,9 @@
         <li class="nav-item"><a href="/about/webapp.html" class="nav-link px-2 text-body-secondary">About webapp</a>
         </li>
     </ul>
+    <!-- Stats Counter -->
+    <div align='center' style="display: none;"><a href='https://www.websitecounterfree.com'
+            style="color: #212529;text-decoration: none;">ยอดผู้เข้าชมทั้งหมด : <span><img style="margin-top: 10px;"
+                    width="200px" src='https://www.websitecounterfree.com/c.php?d=9&id=37132&s=4' border='0'
+                    alt='Free Website Counter'></span></a><br /></div>
 </footer>
