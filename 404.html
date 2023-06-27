@@ -19,7 +19,13 @@
     <script defer src="/js/Navbar.js"></script>
     <script defer src="/js/Footbar.js"></script>
     <script src="/js/Loder.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
 </head>
+
+<script type="text/javascript">
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
 
 <body>
     <div id="nav-container"></div>
@@ -28,7 +34,10 @@
         <img src="https://cdn.cncmachines.com/icons/404.gif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
             width="500" height="300" loading="lazy">
         <br>
-        <h1 class="display-5 fw-bold text-body-emphasis">หลงทางรึเปล่า ?</h1>
+        <h1 class="display-5 fw-bold text-body-emphasis">หลงทางรึเปล่า ? <span><button type="button" class="btn"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal"><img width="40px"
+                        src="https://www.kindpng.com/picc/m/108-1085324_chrome-dinosaur-png-t-rex-google-png-transparent.png">
+                </button></span></h1>
         <div class="col-lg-6 mx-auto">
             <p class="lead mb-4">ดูเหมือนว่าคุณจะหลงทางนะ ! ไม่พบหน้าที่คุณต้องการ กลับไปที่หน้าแรก เพื่อ
                 ดำเนินการต่อการต่อ</p>
@@ -36,6 +45,20 @@
         <br>
         <button onclick="window.location.href = '/';" style="background-color: rgb(45, 118, 255);color: white;"
             type="button" class="btn">กลับไปที่หน้าหลัก</button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Dino game is very funny</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe height="400px" width="100%" scrolling="no" src="https://chromedino.com/"></iframe>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- End Of Content -->
     <div id="footer-container"></div>
