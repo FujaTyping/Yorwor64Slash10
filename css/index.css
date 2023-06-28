@@ -15,3 +15,13 @@
 .dropdown-item:focus {
     background-color: rgb(45, 118, 255);
 }
+
+#Bigscreenwarn {
+    display: none;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #Bigscreenwarn {
+        display: block;
+    }
+}
