@@ -19,6 +19,7 @@
     <script defer src="/js/Navbar.js"></script>
     <script defer src="/js/Footbar.js"></script>
     <script src="/js/Loder.js"></script>
+    <script src="/js/404.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
 </head>
 
@@ -39,12 +40,19 @@
                         src="https://www.kindpng.com/picc/m/108-1085324_chrome-dinosaur-png-t-rex-google-png-transparent.png">
                 </button></span></h1>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">ดูเหมือนว่าคุณจะหลงทางนะ ! ไม่พบหน้าที่คุณต้องการ กลับไปที่หน้าแรก เพื่อ
-                ดำเนินการต่อการต่อ</p>
+            <p class="lead mb-4">ดูเหมือนว่าคุณจะหลงทางนะ ! ไม่พบหน้าที่คุณต้องการ กลับไปที่หน้าแรก
+                เพื่อ
+                ดำเนินการต่อการต่อ<br><br>
+                <e id="text-container">...</e>
+            </p>
         </div>
-        <br>
-        <button onclick="window.location.href = '/';" style="background-color: rgb(45, 118, 255);color: white;"
-            type="button" class="btn">กลับไปที่หน้าหลัก</button>
+        <button id="Stillload" class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            กำลังโหลด ...
+        </button>
+        <button id="Finishload" onclick="window.location.href = '/';"
+            style="background-color: rgb(45, 118, 255);color: white; display: none;" type="button"
+            class="btn">กลับไปที่หน้าหลัก</button>
     </div>
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
