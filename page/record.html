@@ -22,6 +22,8 @@
     <script src="/js/IframeLoader.js"></script>
     <script src="/js/Loder.js"></script>
     <script defer src="/js/Pencil.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 
 <body>
@@ -46,6 +48,9 @@
                     <button style="color: rgb(45, 118, 255);" class="nav-link" id="nav-board-tab" data-bs-toggle="tab"
                         data-bs-target="#nav-board" type="button" role="tab" aria-controls="nav-board"
                         aria-selected="false" tabindex="-1">กระดาน</button>
+                    <button style="color: rgb(45, 118, 255);" class="nav-link" id="nav-request-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-request" type="button" role="tab" aria-controls="nav-request"
+                        aria-selected="false" tabindex="-1">ขอฟีเจอร์ใหม่ๆ</button>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
@@ -65,6 +70,37 @@
                         </div>
                         <iframe id="DataIframe" style="border: none;display: none;" width="100%" height="500px"
                             src="https://witeboard.com/15b70130-092c-11ee-9a83-ff6d72476a4e"></iframe>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-request" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="tab-pane fade active show" id="nav-rec" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <br>
+                        <div style="width: 80%;margin: auto;">
+                            <h1 class="h3 mb-3 fw-normal">กรอกข้อมูลด้านล่างได้เลย 📥</h1>
+                            <br>
+                            <div class="form-floating">
+                                <input class="form-control" id="floatingInputVa" placeholder="...">
+                                <label for="floatingInputVa">ต้องการขออะไร ?</label>
+                            </div>
+                            <br>
+                            <div class="form-floating">
+                                <input class="form-control" id="floatingInputName" placeholder="...">
+                                <label for="floatingInputName">ชื่อ (อะไรก็ได้)</label>
+                            </div>
+                            <br>
+                            <div class="form-floating">
+                                <input class="form-control" id="floatingInputEmail" placeholder="...">
+                                <label for="floatingInputEmail">อีเมลที่จะตอบกลับ</label>
+                                <br>
+                                <button onclick="sendWebhook()"
+                                    style="background-color: rgb(45, 118, 255);color: white;" class="btn w-100 py-2"
+                                    type="submit">ส่งข้อมูล</button>
+                                <!-- Request Script -->
+                                <script src="/js/Endecrypt.js"></script>
+                                <script src="/js/Request.js"></script>
+                            </div>
+                        </div>
+                        <br>
                     </div>
                 </div>
             </div>
