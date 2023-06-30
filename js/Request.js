@@ -28,27 +28,67 @@ function sendWebhook() {
     };
 
     Swal.fire({
-        icon: 'warning',
-        title: 'กำลังส่งข้อมูล',
-        text: 'กรุณารอสักครู่...',
-        showConfirmButton: false,
+        icon: 'question',
+        title: 'ต้องการส่งจริงๆใช่ไหม ?',
+        text: "ถ้ากดส่งแล้วจะแก้คำขอไม่ได้นะ !",
+        showDenyButton: true,
+        confirmButtonText: "ส่งเลย",
+        denyButtonText: `คิดดูก่อน`,
+        /* Custom animation */
+        showClass: {
+            popup: 'animate__animated animate__rollIn'
+        },
+        hideClass: {
+            popup: 'animate__animated animate__hinge'
+        },
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                icon: 'warning',
+                title: 'กำลังส่งข้อมูล',
+                text: 'กรุณารอสักครู่...',
+                showConfirmButton: false,
+                /* Custom animation */
+                showClass: {
+                    popup: 'animate__animated animate__rollIn'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__hinge'
+                },
+            })
+
+            axios.post(webhookUrl, payload)
+                .then(response => {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'ส่งข้อมูลแล้ว',
+                        text: 'กรุณารอการตอบกลับทาง email ที่ให้ไว้',
+                        showConfirmButton: false,
+                        /* Custom animation */
+                        showClass: {
+                            popup: 'animate__animated animate__rollIn'
+                        },
+                        hideClass: {
+                            popup: 'animate__animated animate__hinge'
+                        },
+                    })
+                })
+                .catch(error => {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'ไม่สามารถส่งข้อมูลได้',
+                        text: 'เกิดอะไรขึ้น ? ทั้งหมดคือที่เรารู้ !',
+                        showConfirmButton: false,
+                        /* Custom animation */
+                        showClass: {
+                            popup: 'animate__animated animate__rollIn'
+                        },
+                        hideClass: {
+                            popup: 'animate__animated animate__hinge'
+                        },
+                    })
+                });
+        }
     })
 
-    axios.post(webhookUrl, payload)
-        .then(response => {
-            Swal.fire({
-                icon: 'success',
-                title: 'ส่งข้อมูลแล้ว',
-                text: 'กรุณารอการตอบกลับทาง email ที่ให้ไว้',
-                showConfirmButton: false,
-            })
-        })
-        .catch(error => {
-            Swal.fire({
-                icon: 'error',
-                title: 'ไม่สามารถส่งข้อมูลได้',
-                text: 'เกิดอะไรขึ้น ? ทั้งหมดคือที่เรารู้ !',
-                showConfirmButton: false,
-            })
-        });
 }
