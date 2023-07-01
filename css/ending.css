@@ -1,0 +1,70 @@
+.timeline {
+    width: 800px;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.timeline ul {
+    list-style-type: none;
+    border-left: 2px solid rgb(45, 118, 255);
+    padding: 10px 5px;
+}
+
+.timeline ul li {
+    padding: 20px 20px;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.timeline ul li span {
+    display: inline-block;
+    background-color: rgb(45, 118, 255);
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.timeline ul li .content h3 {
+    color: rgb(45, 118, 255);
+    font-size: 17px;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+.timeline ul li .content p {
+    padding: 5px 0px 15px 0px;
+    font-size: 15px;
+    color: #212529;
+}
+
+.timeline ul li:before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: rgb(45, 118, 255);
+    border-radius: 50%;
+    left: -11px;
+    top: 28px;
+    transition: .5s;
+}
+
+.timeline ul li:hover:before {
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 10px 2px rgb(255, 0, 0);
+}
+
+@media (max-width:1000px) {
+    .timeline {
+        width: 100%;
+        padding: 30px 5px 30px 10px;
+    }
+
+    .timeline ul li .content h3 {
+        color: #34ace0;
+        font-size: 15px;
+    }
+
+}
