@@ -37,7 +37,8 @@
     </div>
     <div class="container px-4 py-5" id="hanging-icons">
         <h2 class="pb-2 border-bottom">👨🏻‍🎓👩🏻‍🎓 เรื่องราวของพวกเรา - Our
-            story <span><button id="musicbtn" onclick="playmusic()" class="btn rounded-circle p-3 lh-1" type="button">
+            story <span><button id="musicbtn" onclick="playmusic()"
+                    class="btn rounded-circle p-3 lh-1 animate__animated animate__tada animate__infinite" type="button">
                     <img width="20" height="22"
                         src="https://cdn.discordapp.com/attachments/1099042961225961553/1119950553426960474/106-1068121_transparent-music-icon-png-icon-music-png-png-removebg-preview.png">
                 </button></span></h2>
@@ -83,6 +84,31 @@
     </div>
     <!-- End Of Content -->
     <div id="footer-container"></div>
+    <!-- Toast -->
+    <button style="display: none;" type="button" class="btn btn-primary" id="liveToastBtn"></button>
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <e style="font-weight: bold;">Now playing</e> - Mephisto from Oshi No Ko (Instrumental by : Jonatan
+                    King)
+                </div>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+    <!-- Toast Script -->
+    <script type="text/javascript">
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+    </script>
 </body>
 
 </html>

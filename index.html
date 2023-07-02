@@ -115,6 +115,30 @@
             Indev()
         }
     </script>
+    <!-- Toast -->
+    <button style="display: none;" type="button" class="btn btn-primary" id="DeliveToastBtn">Show live toast</button>
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="DeliveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <e style="font-weight: bold;">Now playing</e> - In Dreamland (by : Chillpeach)
+                </div>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+    <!-- Toast Script -->
+    <script type="text/javascript">
+        const toastTrigger = document.getElementById('DeliveToastBtn')
+        const toastLiveExample = document.getElementById('DeliveToast')
+
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+    </script>
     <!-- 
         Time To Sun Set M.3/10
         Our memories will live forever !

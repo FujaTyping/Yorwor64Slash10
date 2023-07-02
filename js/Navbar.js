@@ -23,6 +23,9 @@ function playmusic() {
         const EaudioPlayer = document.getElementById('EndaudioPlayer');
 
         if (EaudioPlayer.paused) {
+            const EndmusicTrigger = document.getElementById('liveToastBtn')
+            EndmusicTrigger.click()
+
             EaudioPlayer.play();
         } else {
             EaudioPlayer.pause();
@@ -31,6 +34,11 @@ function playmusic() {
         const audioPlayer = document.getElementById('audioPlayer');
 
         if (audioPlayer.paused) {
+            if (name == "index.html" || name == "") {
+                const musicTrigger = document.getElementById('DeliveToastBtn')
+                musicTrigger.click()
+            }
+
             audioPlayer.play();
         } else {
             audioPlayer.pause();
