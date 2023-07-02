@@ -25,13 +25,22 @@
 
 <body>
     <div id="nav-container"></div>
+    <!--  ติด Anime เหละดูออก -->
+    <audio id="EndaudioPlayer" loop hidden controls>
+        <source
+            src="https://cdn.discordapp.com/attachments/1071401485239332864/1124545409470169189/Mephisto_Instrumental_ED_1_Oshi_no_Ko_TV_Size.mp3"
+            type="audio/mpeg">
+    </audio>
     <!-- Begin Content -->
     <div style="width: 80%;margin: auto;" class="alert alert-warning" role="alert">
         หน้านี้เข้าได้ผ่าน <strong>Popup ที่ขึ้นมาเท่านั้น</strong> ตรงแถบนำทางจะไม่มี
     </div>
     <div class="container px-4 py-5" id="hanging-icons">
         <h2 class="pb-2 border-bottom">👨🏻‍🎓👩🏻‍🎓 เรื่องราวของพวกเรา - Our
-            story</h2>
+            story <span><button id="musicbtn" onclick="playmusic()" class="btn rounded-circle p-3 lh-1" type="button">
+                    <img width="20" height="22"
+                        src="https://cdn.discordapp.com/attachments/1099042961225961553/1119950553426960474/106-1068121_transparent-music-icon-png-icon-music-png-png-removebg-preview.png">
+                </button></span></h2>
         <div style="margin: auto;" class="timeline animate__animated animate__fadeInUp">
             <ul>
                 <li>

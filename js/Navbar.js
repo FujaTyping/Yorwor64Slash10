@@ -10,12 +10,30 @@ fetch('/assets/navbar.php')
         console.error('Error fetching /assets/navbar.php :', error);
     });
 
-function playmusic() {
-    const audioPlayer = document.getElementById('audioPlayer');
+function findpage() {
+    var pathname = window.location.pathname;
+    var filename = pathname.split('/').pop();
+    return filename
+}
 
-    if (audioPlayer.paused) {
-        audioPlayer.play();
+function playmusic() {
+    var name = findpage()
+
+    if (name == "ending.html" || name == "ending") {
+        const EaudioPlayer = document.getElementById('EndaudioPlayer');
+
+        if (EaudioPlayer.paused) {
+            EaudioPlayer.play();
+        } else {
+            EaudioPlayer.pause();
+        }
     } else {
-        audioPlayer.pause();
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+        } else {
+            audioPlayer.pause();
+        }
     }
 }
