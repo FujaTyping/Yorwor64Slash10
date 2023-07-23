@@ -47,6 +47,85 @@
         <iframe id="DataIframe" style="border: none;display: none;" width="100%" height="500px"
             src="https://script.google.com/macros/s/AKfycbzYm8bJ5gwLG2k7B9AXyIXo2DHX8ugb3Gye4S95aOluessLfO3kU0o0gFse0hqeXLY/exec"></iframe>
     </div>
+    <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">สรุปสถิติการบ้าน 📄</h2>
+        <br>
+        <h6><strong>จะเรียงลำดับตามสี 🔴 แดง 🟡 เหลือง 🟢 เขียว</strong></h6>
+        <br>
+        <article class="my-3" id="accordion">
+            <div>
+                <div class="bd-example-snippet bd-code-snippet">
+                    <div class="bd-example">
+                        <div class="accordion" id="accordionExample">
+                            <div style="background-color: rgb(45, 118, 255);color: white;" class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button style="background-color: rgb(45, 118, 255);color: white;"
+                                        class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        กลางภาค เทอม 1
+                                    </button>
+                                </h4>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample" style="">
+                                    <div class="accordion-body">
+                                        <ul class="list-group">
+                                            <li style="background-color: red;color: white;" class="list-group-item">✎
+                                                English ทั้งหมด 15 งาน<br>(╯°□°)╯︵ ┻━┻ สั่งแล้วไม่ค่อยจะรีบงานเท่าไร
+                                            </li>
+                                            <li style="background-color: red;color: white;" class="list-group-item">✎
+                                                คณิตศาสตร์ ทั้งหมด 11 งาน</li>
+                                            <li style="background-color: yellow;" class="list-group-item">✎ วิทยาศาสตร์
+                                                ทั้งหมด 5 งาน</li>
+                                            <li style="background-color: yellow;" class="list-group-item">✎ ภาษาไทย
+                                                ทั้งหมด 4 งาน</li>
+                                            <li style="background-color: yellow;" class="list-group-item">✎ สุขศึกษา
+                                                ทั้งหมด 3 งาน</li>
+                                            <li style="background-color: yellow;" class="list-group-item">✎ แนะแนว
+                                                ทั้งหมด 3 งาน</li>
+                                            <li style="background-color: green;color: white;" class="list-group-item">✎
+                                                ไทย ทั้งหมด 1 งาน</li>
+                                            <li style="background-color: green;color: white;" class="list-group-item">✎
+                                                English (LAS) ทั้งหมด 1 งาน</li>
+                                            <li style="background-color: green;color: white;" class="list-group-item">✎
+                                                สังคม ทั้งหมด 1 งาน</li>
+                                            <li style="background-color: green;color: white;" class="list-group-item">✎
+                                                นาฏศิลป์ ทั้งหมด 1 งาน</li>
+                                            <li style="background-color: green;color: white;" class="list-group-item">✎
+                                                ประวัติ ทั้งหมด 1 งาน</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="background-color: rgb(45, 118, 255);color: white;" class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button style="background-color: rgb(45, 118, 255);color: white;"
+                                        class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+                                        ปลายภาค เทอม 1
+                                    </button>
+                                </h4>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample" style="">
+                                    <div class="accordion-body">
+                                        อย่ารีบ !!!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+        <br>
+        <h6><strong>⬇️ ดาวน์โหลดไฟล์ CSV ของการบ้าน</strong></h6>
+        <br>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button onclick="window.location.href = '/cdn/HomeworkHistoryMidterm 1.csv';"
+                style="background-color: rgb(45, 118, 255);color: white;" type="button" class="btn">การบ้านกลางภาคเทอม
+                1</button>
+        </div>
+    </div>
     <!-- End Of Content -->
     <div id="footer-container"></div>
 </body>
