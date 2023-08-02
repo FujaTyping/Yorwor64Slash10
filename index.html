@@ -29,7 +29,23 @@
         <script defer type="module" src="/Initialize.js"></script>
         <script defer type="module" src="/Function.js"></script>
     -->
+    <script src="/js/Endecrypt.js"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
 </head>
+
+<script>
+    var auth = decodeshif("0c4FFFFFFFNSpIIQCKiNr23Y", "5")
+
+    window.onloadTurnstileCallback = function () {
+        turnstile.render('#Witturnstile', {
+            sitekey: `${auth}`,
+            callback: function (token) {
+                console.log(`Challenge Success ${token}`);
+                window.location.href = '/backend.html';
+            },
+        });
+    };
+</script>
 
 <body>
     <div id="nav-container"></div>
@@ -114,7 +130,6 @@
     <!-- End Of Content -->
     <div id="footer-container"></div>
     <!-- Check admin -->
-    <script src="/js/Endecrypt.js"></script>
     <script src="/js/Admin.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script type="text/javascript">
