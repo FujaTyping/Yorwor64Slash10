@@ -35,6 +35,7 @@
             </button>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/page/event.html">บันทึกกิจกรรม</a></li>
+                <li><a class="dropdown-item" href="/maharaj.html">กิจกรรมกีฬาสี</a></li>
             </ul>
         </div>
         <div class="btn-group">

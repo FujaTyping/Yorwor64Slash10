@@ -40,7 +40,7 @@
         turnstile.render('#Witturnstile', {
             sitekey: `${auth}`,
             callback: function (token) {
-                console.log(`Challenge Success ${token}`);
+                /*console.log(`Challenge Success ${token}`);*/
                 window.location.href = '/backend.html';
             },
         });
