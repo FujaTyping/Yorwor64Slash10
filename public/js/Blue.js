@@ -11,6 +11,13 @@ function IsYou() {
         inputAttributes: {
             autocapitalize: 'off'
         },
+        /* Custom animation */
+        showClass: {
+            popup: 'animate__animated animate__wobble'
+        },
+        hideClass: {
+            popup: 'animate__animated animate__fadeOutDown'
+        },
         confirmButtonText: 'ยืนยัน',
         showDenyButton: true,
         denyButtonText: `เราอยู่สีอื่นหนะ`,
@@ -30,6 +37,13 @@ function IsYou() {
                 icon: 'success',
                 title: 'ยืนยันสำเร็จ',
                 text: "ยืนดีต้อนรับสมาชิกสีน้ำเงินมหาราช",
+                /* Custom animation */
+                showClass: {
+                    popup: 'animate__animated animate__wobble'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutDown'
+                },
                 confirmButtonText: 'โอเคร',
             })
         }
