@@ -30,9 +30,6 @@
                 </li>
         </ul>
         <!-- Stats Counter -->
-        <div align='center' style="display: none;"><a href='https://www.websitecounterfree.com'
-                        style="color: #212529;text-decoration: none;">ยอดผู้เข้าชมทั้งหมด : <span><img
-                                        style="margin-top: 10px;" width="200px"
-                                        src='https://www.websitecounterfree.com/c.php?d=9&id=37132&s=4' border='0'
-                                        alt='Free Website Counter'></span></a><br /></div>
+        <div id="histats_counter" style="margin: auto;">
+        <div id="histats_counter_8801" style="display: block;"><a href="http://www.histats.com/viewstats/?sid=4804811&amp;ccid=605" target="_blank"><canvas id="histats_counter_8801_canvas" width="113" height="58" style="cursor: pointer;"></canvas></a></div></div>
 </footer>
