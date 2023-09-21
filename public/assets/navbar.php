@@ -26,6 +26,7 @@
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/page/homework.html">การบ้าน</a></li>
                 <li><a class="dropdown-item" href="/page/classcode.html">รหัสห้องเรียน</a></li>
+                <li><a class="dropdown-item" href="/page/lesson.html">ห้องเรียนออนไลน์</a></li>
             </ul>
         </div>
         <div class="btn-group">
