@@ -19,6 +19,11 @@
     <script defer src="/js/Navbar.js"></script>
     <script defer src="/js/Footbar.js"></script>
     <script src="/js/Loder.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="/js/Endecrypt.js"></script>
+    <script src="/js/Sheety.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -60,6 +65,10 @@
                 onclick="window.location.href = 'https://docs.google.com/spreadsheets/d/1agkar495rR3EfBMFa_dYsk-gRJAN8h4_oMlIGcw4O-4/edit?usp=sharing';"
                 style="background-color: rgb(45, 118, 255);color: white;" type="button" class="btn">ฐานข้อมูล
                 ความคิดเห็น</button>
+        </div> <br>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button onclick="APIhomework()" style="background-color: rgb(255, 45, 45);color: white;" type="button"
+                class="btn">เพิ่มข้อมูลการบ้าน</button>
         </div>
     </div>
     <div class="container px-4 py-5" id="hanging-icons">
