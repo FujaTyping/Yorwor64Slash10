@@ -74,7 +74,7 @@
                 src="https://cdn.discordapp.com/attachments/1071401485239332864/1122916594901844089/no_copyright_music_In_Dreamland_background_music.mp3"
                 type="audio/mpeg">
         </audio>
-        <button onclick="window.location.href = '/auth/v1/login.html';"
+        <button onclick="window.location.href = '/auth/login.html';"
             style="background-color: rgb(255, 22, 22);color: white;" type="button" class="btn">ล็อกอิน</button>
     </div>
 </header>
