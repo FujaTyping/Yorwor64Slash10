@@ -7,7 +7,8 @@ function APIhomework() {
     Swal.fire({
         icon: 'warning',
         title: "รหัสผ่านเพื่อแก้ไข้ฐานข้อมูล !!",
-        input: "text",
+        text: "ถ้าไม่รู้ / จำไม่ได้ ลองถามรองฝ่ายการเรียนดูสิ !!",
+        input: "password",
         inputAttributes: {
             autocapitalize: "off"
         },
@@ -34,6 +35,7 @@ function APIhomework() {
             Swal.fire({
                 icon: 'question',
                 title: "ใส่วิชาของการบ้าน",
+                text: "ตัวอย่าง : ชื่อวิชา (วันที่)",
                 input: "text",
                 inputAttributes: {
                     autocapitalize: "off"
@@ -50,13 +52,20 @@ function APIhomework() {
                     popup: 'animate__animated animate__backOutRight'
                 },
                 preConfirm: (subject) => {
-                    Subject = subject
+                    if (subject == "") {
+                        Swal.showValidationMessage(
+                            `เขียนดีๆ สิ :(`
+                        )
+                    } else {
+                        Subject = subject
+                    }
                 },
             }).then((result) => {
                 if (result.isConfirmed) {
                     Swal.fire({
                         icon: 'question',
                         title: "ใส่รายละเอียดของงาน",
+                        text: "เว้นวรรคให้ดีละ :D",
                         input: "text",
                         inputAttributes: {
                             autocapitalize: "off"
@@ -71,13 +80,20 @@ function APIhomework() {
                             popup: 'animate__animated animate__backOutRight'
                         },
                         preConfirm: (alt) => {
-                            Alt = alt
+                            if (alt == "") {
+                                Swal.showValidationMessage(
+                                    `เขียนดีๆ สิ :(`
+                                )
+                            } else {
+                                Alt = alt
+                            }
                         },
                     }).then((result) => {
                         if (result.isConfirmed) {
                             Swal.fire({
                                 icon: 'question',
                                 title: "ใส่วันกำหนดส่งของงาน",
+                                text: "ตัวอย่าง : วว / ดด / ปป",
                                 input: "text",
                                 inputAttributes: {
                                     autocapitalize: "off"
@@ -92,7 +108,13 @@ function APIhomework() {
                                     popup: 'animate__animated animate__backOutRight'
                                 },
                                 preConfirm: (time) => {
-                                    Time = time
+                                    if (time == "") {
+                                        Swal.showValidationMessage(
+                                            `เขียนดีๆ สิ :(`
+                                        )
+                                    } else {
+                                        Time = time
+                                    }
                                 },
                             }).then((result) => {
                                 if (result.isConfirmed) {
@@ -109,7 +131,7 @@ function APIhomework() {
                                             popup: 'animate__animated animate__backInLeft'
                                         },
                                         hideClass: {
-                                            popup: 'animate__animated animate__backOutRight'
+                                            popup: 'animate__animated animate__flipOutX'
                                         },
                                         preConfirm: async (Send) => {
                                             try {
@@ -124,12 +146,13 @@ function APIhomework() {
                                                 title: "ส่งข้อมูลสำเร็จ !!",
                                                 html: `กรุณาไปดูข้อมูลในหน้าการบ้าน :D<br>ข้อมูลที่ส่งไปคือ : ${Subject} , ${Alt} , ${Time}`,
                                                 icon: "success",
+                                                confirmButtonText: "ใช่เลย !",
                                                 /* Custom animation */
                                                 showClass: {
                                                     popup: 'animate__animated animate__backInLeft'
                                                 },
                                                 hideClass: {
-                                                    popup: 'animate__animated animate__backOutRight'
+                                                    popup: 'animate__animated animate__flipOutX'
                                                 },
                                             });
                                         }
