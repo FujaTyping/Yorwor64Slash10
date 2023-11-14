@@ -21,8 +21,25 @@
     <script src="/js/Loder.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/Endecrypt.js"></script>
     <script defer src="/js/auth/v1.js"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
 </head>
+
+<script>
+    var auth = decodeshif("0c4FFFFFFFNSpIIQCKiNr23Y", "5")
+    const query = decodeshif("?mooqee=sdmzfqp", "12")
+
+    window.onloadTurnstileCallback = function () {
+        turnstile.render('#Witturnstile', {
+            sitekey: `${auth}`,
+            callback: function (token) {
+                /*console.log(`Challenge Success ${token}`);*/
+                window.location.href = `/backend.html${query}`;
+            },
+        });
+    };
+</script>
 
 <body>
     <div id="nav-container"></div>
@@ -51,6 +68,17 @@
     <br>
     <!-- End Of Content -->
     <div id="footer-container"></div>
+    <!-- Check admin -->
+    <script src="/js/Admin.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript">
+        var url = window.location.href;
+        var key = decodeshif("?rvio=wvxfziy", "21")
+
+        if (url.indexOf(`${key}`) !== -1) {
+            Indev()
+        }
+    </script>
 </body>
 
 </html>
