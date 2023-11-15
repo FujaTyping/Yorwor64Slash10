@@ -135,28 +135,12 @@ function APIhomework() {
                                         },
                                         preConfirm: async (Send) => {
                                             try {
-                                                portwork(Subject, Alt, Time)
+                                                await portwork(Subject, Alt, Time)
                                             } catch (error) {
                                                 Swal.showValidationMessage(`ต้องมีอะไรผิดผลาดตรงไหน : ${error}`);
                                             }
                                         },
-                                    }).then((result) => {
-                                        if (result.isConfirmed) {
-                                            Swal.fire({
-                                                title: "ส่งข้อมูลสำเร็จ !!",
-                                                html: `กรุณาไปดูข้อมูลในหน้าการบ้าน :D<br>ข้อมูลที่ส่งไปคือ : ${Subject} , ${Alt} , ${Time}`,
-                                                icon: "success",
-                                                confirmButtonText: "ใช่เลย !",
-                                                /* Custom animation */
-                                                showClass: {
-                                                    popup: 'animate__animated animate__backInLeft'
-                                                },
-                                                hideClass: {
-                                                    popup: 'animate__animated animate__flipOutX'
-                                                },
-                                            });
-                                        }
-                                    });
+                                    })
                                 }
                             });
                         }
@@ -185,6 +169,36 @@ async function portwork(Hw, De, Ti) {
             'Content-Type': 'application/json'
         }
     })
-        .then((response) => console.log(response.data))
-        .catch((error) => console.error(error));
+        .then((response) => {
+            /*console.log(response.data)*/
+            Swal.fire({
+                title: "ส่งข้อมูลสำเร็จ !!",
+                html: `กรุณาไปดูข้อมูลในหน้าการบ้าน :D<br>ข้อมูลที่ส่งไปคือ : ${Hw} , ${De} , ${Ti}`,
+                icon: "success",
+                confirmButtonText: "ใช่เลย !",
+                /* Custom animation */
+                showClass: {
+                    popup: 'animate__animated animate__backInLeft'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__flipOutX'
+                },
+            });
+        })
+        .catch((error) => {
+            /*console.error(error)*/
+            Swal.fire({
+                title: "ไม่สามารถส่งข้อมูลได้ :(",
+                html: `ต้องมีอะไรผิดผลาดตรงไหน : ${error}`,
+                icon: "error",
+                confirmButtonText: "แย่จัง !",
+                /* Custom animation */
+                showClass: {
+                    popup: 'animate__animated animate__shakeX'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__flipOutX'
+                },
+            });
+        });
 }
