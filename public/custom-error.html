@@ -17,6 +17,7 @@
         crossorigin="anonymous"></script>
     <link href="/css/index.css" rel="stylesheet" type="text/css">
     <link href="/css/error.css" rel="stylesheet" type="text/css">
+    <script src="/js/Endecrypt.js"></script>
 </head>
 
 <body>
@@ -31,5 +32,14 @@
         </div>
     </div>
 </body>
+
+<script type="text/javascript">
+    var url = window.location.href;
+    var key = decodeshif("?ht", "2")
+
+    if (url.indexOf(`${key}`) === -1) {
+        window.location.href = "/";
+    }
+</script>
 
 </html>

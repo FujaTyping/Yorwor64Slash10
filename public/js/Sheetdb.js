@@ -1,5 +1,5 @@
 function APIhomework() {
-    const Pass = decodeshif("KYXKX", 5)
+    const Pass = SF("RlRTRlM=")
     let Subject = ""
     let Alt = ""
     let Time = ""
