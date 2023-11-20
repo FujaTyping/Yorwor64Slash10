@@ -1,3 +1,3 @@
 <!-- Pencil loader PHP -->
 
-<div id="IframeLoader" class="loader"></div>
+<span class="loader"></span><br>กำลังรับข้อมูล ... (อาจจะใช้เวลานิดนึง)

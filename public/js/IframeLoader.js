@@ -3,7 +3,8 @@ window.onload = function () {
     const Bg = document.querySelectorAll("#DataIframe");
 
     for (let i = 0; i < Load.length; i++) {
-        Load[i].style.display = "none";
+        Load[i].remove()
+        // Load[i].style.display = "none";
     }
 
     for (let i = 0; i < Bg.length; i++) {
