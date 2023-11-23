@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 * {
     font-family: Mitr;
+}
+
+thai {
+    font-family: Sriracha;
 }
 
 #CardHatyaiwit {
