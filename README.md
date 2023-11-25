@@ -14,6 +14,7 @@
 - **Front-end** : HTML, CSS, JavaScript, bootstrap, PHP
 - **Back-end** : Google app script
 - **Database** : Google Sheet
+- **Deploy** : [Firebase](https://firebase.google.com/)
 - **API** : [Sheetdb](https://sheetdb.io/)
 - **Version Control** : [Git](https://git-scm.com/)
 
