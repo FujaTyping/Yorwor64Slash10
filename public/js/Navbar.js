@@ -5,6 +5,16 @@ fetch('/assets/navbar.php')
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
         console.log('Navbar is loaded !')
+
+        const currentDomain = window.location.hostname;
+        const Warnnav = document.getElementById("Olddomain");
+
+        if (currentDomain === 'yorwor.fujatyping.dev') {
+            Warnnav.remove()
+            console.log("Domain : you're up to date :)");
+        } else {
+            console.log("Domain : old domain detected !");
+        }
     })
     .catch(error => {
         console.error('Error fetching /assets/navbar.php :', error);

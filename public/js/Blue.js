@@ -7,7 +7,7 @@ function IsYou() {
         icon: 'question',
         title: 'ขอสิทธ์เข้าถึง ?',
         text: "รหัสสำหรับการเข้าถึงเนื้อหา",
-        input: 'text',
+        input: 'password',
         inputAttributes: {
             autocapitalize: 'off'
         },

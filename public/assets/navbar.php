@@ -8,6 +8,13 @@
         </ul>
     </div>
 </nav>
+<nav id="Olddomain" style="font-size: 10px;" class="py-1 bg-warning">
+    <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+            <li class="nav-item">ดูเหมือนว่าคุณยังใช้โดเมนแบบเก่าอยู่ ตอนนี้ย้ายไปใช้ชื่อ : <a style="color: black;" href="https://yorwor.fujatyping.dev/" >yorwor.fujatyping.dev</a> แล้ว</li>
+        </ul>
+    </div>
+</nav>
 <header style="padding: 20px;background-color: rgb(45, 118, 255);"
     class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
     <div class="col-md-3 mb-2 mb-md-0">
