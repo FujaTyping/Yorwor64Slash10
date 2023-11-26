@@ -31,6 +31,4 @@
                 </li>
         </ul>
         <!-- Stats Counter -->
-        <div id="histats_counter" style="margin: auto;">
-        <div id="histats_counter_8801" style="display: block;"><a href="http://www.histats.com/viewstats/?sid=4804811&amp;ccid=605" target="_blank"><canvas id="histats_counter_8801_canvas" width="113" height="58" style="cursor: pointer;"></canvas></a></div></div>
 </footer>
