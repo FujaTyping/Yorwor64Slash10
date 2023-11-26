@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
 
 * {
     font-family: Mitr;
@@ -43,6 +44,11 @@ thai {
 
 .Whiteimpor {
     color: white !important;
+}
+
+.Gicon {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
