@@ -3,7 +3,6 @@ function APIhomework() {
     let Subject = ""
     let Alt = ""
     let Time = ""
-
     Swal.fire({
         icon: 'warning',
         title: "รหัสผ่านเพื่อแก้ไข้ฐานข้อมูล !!",
@@ -30,7 +29,7 @@ function APIhomework() {
                 )
             }
         },
-    }).then((result) => {
+    }).then(async (result) => {
         if (result.isConfirmed) {
             Swal.fire({
                 icon: 'question',
@@ -169,7 +168,7 @@ async function portwork(Hw, De, Ti) {
             'Content-Type': 'application/json'
         }
     })
-        .then((response) => {
+        .then(async (response) => {
             /*console.log(response.data)*/
             Swal.fire({
                 title: "ส่งข้อมูลสำเร็จ !!",
@@ -185,6 +184,7 @@ async function portwork(Hw, De, Ti) {
                 },
             });
 
+            await HwpushNoti(Hw)
             /*new Notification('Yorwor64Slash10', { body: `วันนี้มีการบ้านวิชา ${Hw} ด้วยละ ~ อย่าลืมทำกันน้า!!` });*/
         })
         .catch((error) => {
@@ -203,4 +203,30 @@ async function portwork(Hw, De, Ti) {
                 },
             });
         });
+}
+
+async function HwpushNoti(Hw) {
+    const apiKey = decodeshif("87s1r12676wt0rtu418sw6153v4v5v5w", 17);
+    const apiUrl = 'https://api.pushalert.co/rest/v1/send';
+
+    const data = {
+        title: 'Yorwor64Slash10',
+        message: `ตอนนี้มีการบ้านวิชา ${Hw} มาใหม่ละ ~~ อย่าลืมทำกันน้า >-<`,
+        icon: 'https://yorwor.fujatyping.dev/cdn/Yorwor.png',
+        url: 'https://yorwor.fujatyping.dev/page/homework'
+    };
+
+    const headers = {
+        Authorization: `api_key=${apiKey}`,
+        'Content-Type': 'application/x-www-form-urlencoded'
+    };
+
+    await axios.post(apiUrl, new URLSearchParams(data).toString(), { headers })
+        .then(response => {
+            console.log('Push notification : send !');
+        })
+        .catch(error => {
+            console.error(`Push notification error : ${error}`);
+        });
+
 }
