@@ -1,3 +1,4 @@
+/*
 async function WantNotif() {
     const Notif = await document.getElementById("NotiAl");
 
@@ -19,6 +20,7 @@ async function WantNotif() {
         console.log("Notification : notification not support !!")
     }
 }
+*/
 
 fetch('/assets/navbar.php')
     .then(response => response.text())
@@ -34,7 +36,7 @@ fetch('/assets/navbar.php')
         if (currentDomain === 'yorwor.fujatyping.dev') {
             Warnnav.remove()
             console.log("Domain : you're up to date :)");
-            await WantNotif();
+            /*await WantNotif();*/
         } else {
             console.log("Domain : old domain detected !");
         }
