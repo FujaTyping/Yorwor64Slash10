@@ -16,6 +16,7 @@
 - **Database** : Google Sheet
 - **Deploy** : [Firebase](https://firebase.google.com/)
 - **API** : [Sheetdb](https://sheetdb.io/)
+- **Notification** : [Push alert](https://pushalert.co/)
 - **Version Control** : [Git](https://git-scm.com/)
 
 # 📝 ใบอนุญาต
