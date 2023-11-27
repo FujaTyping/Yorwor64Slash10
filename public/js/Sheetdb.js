@@ -184,6 +184,8 @@ async function portwork(Hw, De, Ti) {
                     popup: 'animate__animated animate__flipOutX'
                 },
             });
+
+            new Notification('Yorwor64Slash10', { body: `วันนี้มีการบ้านวิชา ${Hw} ด้วยละ ~ อย่าลืมทำกันน้า!!` });
         })
         .catch((error) => {
             /*console.error(error)*/

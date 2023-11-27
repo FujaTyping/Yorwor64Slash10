@@ -29,6 +29,7 @@
                 <li class="nav-item"><a href="/about/webapp.html" class="nav-link px-2 Whiteimpor">About
                                 webapp</a>
                 </li>
+                <li class="nav-item"><a id='NotiAl' data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="/about/webapp.html" class="nav-link px-2 Whiteimpor">การแจ้งเตือน</a></li>
         </ul>
         <!-- Stats Counter -->
 </footer>

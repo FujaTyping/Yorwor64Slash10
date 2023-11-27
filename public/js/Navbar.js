@@ -1,6 +1,28 @@
+async function WantNotif() {
+    const Notif = await document.getElementById("NotiAl");
+
+    if ('Notification' in window) {
+        Notification.requestPermission().then(async function (permission) {
+            if (permission === 'granted') {
+                console.log("Notification : access granted :D")
+            }
+            else if (permission === 'denied') {
+                console.log("Notification : access denied :(")
+                Notif.click();
+            }
+            else {
+                console.log("Notification : user not choose choice >:(")
+                Notif.click();
+            }
+        });
+    } else {
+        console.log("Notification : notification not support !!")
+    }
+}
+
 fetch('/assets/navbar.php')
     .then(response => response.text())
-    .then(html => {
+    .then(async html => {
         document.getElementById('nav-container').innerHTML = html;
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
@@ -12,6 +34,7 @@ fetch('/assets/navbar.php')
         if (currentDomain === 'yorwor.fujatyping.dev') {
             Warnnav.remove()
             console.log("Domain : you're up to date :)");
+            await WantNotif();
         } else {
             console.log("Domain : old domain detected !");
         }
