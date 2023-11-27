@@ -210,18 +210,23 @@ async function HwpushNoti(Hw) {
     const apiUrl = 'https://api.pushalert.co/rest/v1/send';
 
     const data = {
-        title: 'Yorwor64Slash10',
-        message: `ตอนนี้มีการบ้านวิชา ${Hw} มาใหม่ละ ~~ อย่าลืมทำกันน้า >-<`,
-        icon: 'https://yorwor.fujatyping.dev/cdn/Yorwor.png',
-        url: 'https://yorwor.fujatyping.dev/page/homework'
+        data: [
+            {
+                title: 'Yorwor64Slash10',
+                message: `ตอนนี้มีการบ้านวิชา ${Hw} มาใหม่ละ ~~ อย่าลืมทำกันน้า >-<`,
+                icon: 'https://yorwor.fujatyping.dev/cdn/Yorwor.png',
+                url: 'https://yorwor.fujatyping.dev/page/homework'
+            }
+        ]
     };
 
     const headers = {
-        Authorization: `api_key=${apiKey}`,
-        'Content-Type': 'application/x-www-form-urlencoded'
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'Authorization': `api_key=${apiKey}`
     };
 
-    await axios.post(apiUrl, new URLSearchParams(data).toString(), { headers })
+    await axios.post(apiUrl, data, { headers })
         .then(response => {
             console.log('Push notification : send !');
         })
