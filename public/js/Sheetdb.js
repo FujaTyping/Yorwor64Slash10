@@ -209,29 +209,21 @@ async function HwpushNoti(Hw) {
     const apiKey = decodeshif("87s1r12676wt0rtu418sw6153v4v5v5w", 17);
     const apiUrl = 'https://api.pushalert.co/rest/v1/send';
 
-    const data = {
-        data: [
-            {
-                title: 'Yorwor64Slash10',
-                message: `ตอนนี้มีการบ้านวิชา ${Hw} มาใหม่ละ ~~ อย่าลืมทำกันน้า >-<`,
-                icon: 'https://yorwor.fujatyping.dev/cdn/Yorwor.png',
-                url: 'https://yorwor.fujatyping.dev/page/homework'
-            }
-        ]
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', apiUrl, true);
+    xhr.setRequestHeader('Authorization', `api_key=${apiKey}`);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+    const formData = `title=Hatyaiwit - Homework&message=วันนี้มีการบ้านวิชา : ${Hw} ด้วยละ ~~ อย่าลืมทำกันน้า !!&icon=https://yorwor.fujatyping.dev/cdn/Yorwor.png&url=https://yorwor.fujatyping.dev/page/homework`;
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            const response = JSON.parse(xhr.responseText);
+            console.log(response);
+        } else if (xhr.readyState === 4) {
+            console.error('Error:', xhr.status);
+        }
     };
 
-    const headers = {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-        'Authorization': `api_key=${apiKey}`
-    };
-
-    await axios.post(apiUrl, data, { headers })
-        .then(response => {
-            console.log('Push notification : send !');
-        })
-        .catch(error => {
-            console.error(`Push notification error : ${error}`);
-        });
-
+    xhr.send(formData);
 }
