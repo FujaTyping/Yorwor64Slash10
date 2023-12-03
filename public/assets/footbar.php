@@ -3,7 +3,7 @@
 <br>
 <div style="margin-top: 10px;" class="d-flex justify-content-center">
         <button onclick="document.body.scrollTop = 0; document.documentElement.scrollTop = 0;"
-                style="background-color: rgb(45, 118, 255);color: white;" type="button" class="btn">⇧
+                style="background-color: rgb(45, 118, 255);color: white;" type="button" class="btn"><span class="material-symbols-outlined Gicon">stat_3</span>
                 กลับไปด้านบน</button>
 </div>
 <div style="margin-top: 10px;" id="FooterCurve"></div>

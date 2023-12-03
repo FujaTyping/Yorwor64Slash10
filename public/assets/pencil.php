@@ -1,3 +1,3 @@
 <!-- Pencil loader PHP -->
 
-<span class="loader"></span><br>(อาจจะใช้เวลานิดนึง)
+<span class="loader"></span><br>(อาจจะใช้เวลานิดนึง, หากใช้เวลานานมากกว่าปกติกรุณารีเฟชหน้านี้ใหม่)
