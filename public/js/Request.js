@@ -6,7 +6,7 @@ function sendWebhook() {
     const webhookUrl = `${key}`;
 
     const Sent = document.getElementById("warninfo");
-    if (Name == "" && Email == "") {
+    if (Name == "" || Email == "" || Want == "") {
         Sent.style.display = "block";
     } else {
         Sent.style.display = "none";
