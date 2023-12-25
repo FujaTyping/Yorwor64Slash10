@@ -83,3 +83,8 @@ function playmusic() {
         }
     }
 }
+
+function ChangeDomain() {
+    var pathname = window.location.pathname;
+    window.location.href = `https://yorwor.fujatyping.dev${pathname}`;
+}

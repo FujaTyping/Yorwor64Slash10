@@ -11,7 +11,7 @@
 <nav id="Olddomain" style="font-size: 10px;" class="py-1 bg-warning">
     <div class="container d-flex flex-wrap">
         <ul class="nav me-auto">
-            <li class="nav-item">ดูเหมือนว่าคุณยังใช้โดเมนแบบเก่าอยู่ ตอนนี้ย้ายไปใช้ชื่อ : <a style="color: black;" href="https://yorwor.fujatyping.dev/" >yorwor.fujatyping.dev</a> แล้ว <span class="badge rounded-pill text-bg-danger">ฟีเจอร์ใหม่จะเพิ่มให้กับโดเมนใหม่เท่านั้น คือ : การแจ้งเตือน</span></li>
+            <li class="nav-item">ดูเหมือนว่าคุณยังใช้โดเมนแบบเก่าอยู่ ตอนนี้ย้ายไปใช้ชื่อ : <a style="color: black;cursor: pointer;text-decoration: underline;" onclick='ChangeDomain()' >yorwor.fujatyping.dev</a> แล้ว <span class="badge rounded-pill text-bg-danger">ฟีเจอร์ใหม่จะเพิ่มให้กับโดเมนใหม่เท่านั้น คือ : การแจ้งเตือน</span></li>
         </ul>
     </div>
 </nav>
