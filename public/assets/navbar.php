@@ -15,8 +15,65 @@
         </ul>
     </div>
 </nav>
+<nav style="padding: 20px;background-color: rgb(45, 118, 255) !important;" class="navbar navbar-dark bg-dark navbarmobile">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><img width="40" height="40"
+                src="https://cdn.discordapp.com/attachments/1071401485239332864/1109792299539505163/E0B895E0B8A3E0B8B5E0B888E0B8B1E0B881E0B8A3.png"> ม.3/10 (Talent)</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+        <ul class="navbar-nav me-auto mb-2">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">หน้าหลัก</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">ฝ่ายการเรียน</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/page/homework.html">การบ้าน</a></li>
+                <li><a class="dropdown-item" href="/page/classcode.html">รหัสห้องเรียน</a></li>
+                <li><a class="dropdown-item" href="/page/lesson.html">ห้องเรียนออนไลน์</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">ฝ่ายกิจกรรม</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/page/event.html">บันทึกกิจกรรม</a></li>
+                <li><a class="dropdown-item" href="/maharaj.html">กิจกรรมกีฬาสี</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">ฝ่ายการงาน</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/score.html">ดูคะแนนนักเรียน</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/page/record.html">ความคิดเห็น</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">เอกสาร</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/docs/white-classroom.html">ห้องเรียนสีขาว</a></li>
+                <li><a class="dropdown-item" href="/about/classroom.html">เกี่ยวกับห้องของเรา</a></li>
+                <li><a class="dropdown-item" href="/about/webapp.html">เกี่ยวกับไซต์นี้</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div>
+            <button onclick="playmusic()" class="btn rounded-circle p-3 lh-1" type="button">
+                <img width="18" height="20"
+                    src="https://cdn.discordapp.com/attachments/1071401485239332864/1122914481509519480/106-1068121_transparent-music-icon-png-icon-music-.png">
+            </button>
+            <button onclick="window.location.href = '/auth/login.html';"
+                style="background-color: rgb(255, 22, 22);color: white;" type="button" class="btn">ล็อกอิน</button>
+        </div>
+      </div>
+    </div>
+</nav>
 <header style="padding: 20px;background-color: rgb(45, 118, 255);"
-    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom navall">
     <div class="col-md-3 mb-2 mb-md-0">
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
             <img width="40" height="40"
