@@ -73,4 +73,8 @@ thai {
     .navall {
         display: none !important;
     }
+
+    .alert {
+        margin-top: 1.5rem !important;
+    }
 }
