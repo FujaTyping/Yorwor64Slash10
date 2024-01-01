@@ -73,7 +73,7 @@
     </div>
 </nav>
 <header style="padding: 20px;background-color: rgb(45, 118, 255);"
-    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom navall">
+    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom navall headder headderTop">
     <div class="col-md-3 mb-2 mb-md-0">
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
             <img width="40" height="40"
@@ -142,3 +142,4 @@
             style="background-color: rgb(255, 22, 22);color: white;" type="button" class="btn">ล็อกอิน</button>
     </div>
 </header>
+<img class='headderTop' height="32.5px" width='100%' src='/cdn/assets/Header-divider.png'>
