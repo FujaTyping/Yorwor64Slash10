@@ -7,6 +7,10 @@
     font-family: Mitr;
 }
 
+high {
+    font-weight: bold !important;
+}
+
 thai {
     font-family: Sriracha;
 }
@@ -64,6 +68,10 @@ thai {
     border: none !important;
 }
 
+.alert {
+    margin-top: 1.5rem !important;
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     #Bigscreenwarn {
         display: block;
@@ -77,9 +85,5 @@ thai {
 
     .navall {
         display: none !important;
-    }
-
-    .alert {
-        margin-top: 1.5rem !important;
     }
 }
