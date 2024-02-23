@@ -47,7 +47,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">ฝ่ายกิจกรรม</a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/page/event.html">บันทึกกิจกรรม</a></li>
+                <li><a class="dropdown-item" href="/ending.html">บันทึกกิจกรรม</a></li>
                 <li><a class="dropdown-item" href="/maharaj.html">กิจกรรมกีฬาสี</a></li>
             </ul>
           </li>
@@ -72,7 +72,7 @@
         <div>
             <button onclick="playmusic()" class="btn rounded-circle p-3 lh-1" type="button">
                 <img width="18" height="20"
-                    src="https://cdn.discordapp.com/attachments/1071401485239332864/1122914481509519480/106-1068121_transparent-music-icon-png-icon-music-.png">
+                    src="/cdn/Headphone.png">
             </button>
             <button onclick="window.location.href = '/auth/login.html';"
                 style="background-color: rgb(255, 22, 22);color: white;" type="button" class="btn">ล็อกอิน</button>
@@ -107,7 +107,7 @@
                 ฝ่ายกิจกรรม
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/page/event.html">บันทึกกิจกรรม</a></li>
+                <li><a class="dropdown-item" href="/ending.html">บันทึกกิจกรรม</a></li>
                 <li><a class="dropdown-item" href="/maharaj.html">กิจกรรมกีฬาสี</a></li>
             </ul>
         </div>
@@ -139,7 +139,7 @@
     <div class="col-md-3 text-end">
         <button onclick="playmusic()" class="btn rounded-circle p-3 lh-1" type="button">
             <img width="18" height="20"
-                src="https://cdn.discordapp.com/attachments/1071401485239332864/1122914481509519480/106-1068121_transparent-music-icon-png-icon-music-.png">
+                src="/cdn/Headphone.png">
         </button>
         <audio id="audioPlayer" loop hidden controls>
             <source
