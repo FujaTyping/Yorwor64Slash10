@@ -15,10 +15,18 @@
         </ul>
     </div>
 </nav>
+<nav id="cdnwarn" style="font-size: 10px;" class="py-1 bg-danger">
+    <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+            <li class="nav-item" style="color:white ;">ตอนนี้ระบบ CDN มีปัญหากำลังกู้คืนรูปภาพทั้งหมด จาก <a style="text-decoration: underline;">cdn.discordapp.com</a> มายัง <a style="text-decoration: underline;">yorwor.fujatyping.dev/cdn</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 <nav style="padding: 20px;background-color: rgb(45, 118, 255) !important;" class="navbar navbar-dark bg-dark navbarmobile">
     <div class="container-fluid">
       <a class="navbar-brand" href="/"><img width="40" height="40"
-                src="https://cdn.discordapp.com/attachments/1071401485239332864/1109792299539505163/E0B895E0B8A3E0B8B5E0B888E0B8B1E0B881E0B8A3.png"> ม.3/10 (Talent)</a>
+                src="/cdn/Yorwor.png"> ม.3/10 (Talent)</a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -77,7 +85,7 @@
     <div class="col-md-3 mb-2 mb-md-0">
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
             <img width="40" height="40"
-                src="https://cdn.discordapp.com/attachments/1071401485239332864/1109792299539505163/E0B895E0B8A3E0B8B5E0B888E0B8B1E0B881E0B8A3.png">
+                src="/cdn/Yorwor.png">
         </a>
     </div>
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
