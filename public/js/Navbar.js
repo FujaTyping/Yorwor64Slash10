@@ -33,13 +33,17 @@ fetch('/assets/navbar.php')
         const currentDomain = window.location.hostname;
         const Warnnav = document.getElementById("Olddomain");
 
+        Warnnav.remove()
+
+        /*
         if (currentDomain === 'yorwor.fujatyping.dev') {
             Warnnav.remove()
             console.log("Domain : you're up to date :)");
-            /*await WantNotif();*/
+            // await WantNotif();
         } else {
             console.log("Domain : old domain detected !");
         }
+        */
     })
     .catch(error => {
         console.error('Error fetching /assets/navbar.php :', error);

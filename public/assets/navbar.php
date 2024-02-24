@@ -15,6 +15,7 @@
         </ul>
     </div>
 </nav>
+<!--
 <nav id="cdnwarn" style="font-size: 10px;" class="py-1 bg-danger">
     <div class="container d-flex flex-wrap">
         <ul class="nav me-auto">
@@ -23,6 +24,7 @@
         </ul>
     </div>
 </nav>
+-->
 <nav style="padding: 20px;background-color: rgb(45, 118, 255) !important;" class="navbar navbar-dark bg-dark navbarmobile">
     <div class="container-fluid">
       <a class="navbar-brand" href="/"><img width="40" height="40"
@@ -75,7 +77,9 @@
                     src="/cdn/Headphone.png">
             </button>
             <button onclick="window.location.href = '/auth/login.html';"
-                style="background-color: rgb(255, 22, 22);color: white;" type="button" class="btn">ล็อกอิน</button>
+                style="background-color: rgb(255, 22, 22);color: white;" type="button" class="btn"><span class="material-symbols-outlined Gicon">
+login
+</span> ล็อกอิน</button>
         </div>
       </div>
     </div>
@@ -147,7 +151,9 @@
                 type="audio/mpeg">
         </audio>
         <button onclick="window.location.href = '/auth/login.html';"
-            style="background-color: rgb(255, 22, 22);color: white;" type="button" class="btn">ล็อกอิน</button>
+            style="background-color: rgb(255, 22, 22);color: white;" type="button" class="btn"><span class="material-symbols-outlined Gicon">
+login
+</span> ล็อกอิน</button>
     </div>
 </header>
 <img class='headderTop' height="32.5px" width='100%' src='/cdn/assets/Header-divider.png'>
