@@ -6,6 +6,52 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://yorwor.fujatyping.dev/</loc>
-  <lastmod>2024-03-06T05:04:40+00:00</lastmod>
+  <lastmod>2024-03-06T05:39:44+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://yorwor.fujatyping.dev/page/homework</loc>
+  <lastmod>2024-03-06T05:39:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yorwor.fujatyping.dev/page/classcode</loc>
+  <lastmod>2024-03-06T05:39:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yorwor.fujatyping.dev/page/lesson</loc>
+  <lastmod>2024-03-06T05:39:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yorwor.fujatyping.dev/ending</loc>
+  <lastmod>2024-03-06T05:39:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yorwor.fujatyping.dev/score</loc>
+  <lastmod>2024-03-06T05:39:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yorwor.fujatyping.dev/page/record</loc>
+  <lastmod>2024-03-06T05:39:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yorwor.fujatyping.dev/docs/white-classroom</loc>
+  <lastmod>2024-03-06T05:39:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yorwor.fujatyping.dev/about/classroom</loc>
+  <lastmod>2024-03-06T05:39:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://yorwor.fujatyping.dev/about/webapp</loc>
+  <lastmod>2024-03-06T05:39:44+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 </urlset>
