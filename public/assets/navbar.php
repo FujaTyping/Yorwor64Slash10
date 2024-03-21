@@ -25,6 +25,15 @@
     </div>
 </nav>
 -->
+<nav id="Nolonger" style="font-size: 10px;" class="py-1 bg-danger">
+    <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+            <li class="nav-item" style="color:white ;">โปรเจคนี้หยุดการพัฒนาแล้ว <b>ณ วันที่ 21 มีนาคม 2567</b>
+                ข้อมูลทุกอย่างจะถูกจัดเก็บไว้อย่างดี</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 <nav style="padding: 20px;background-color: rgb(45, 118, 255) !important;" class="navbar navbar-dark bg-dark navbarmobile">
     <div class="container-fluid">
       <a class="navbar-brand" href="/"><img width="40" height="40"
