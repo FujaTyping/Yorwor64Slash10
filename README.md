@@ -19,7 +19,7 @@
 - **Notification** : [Push alert](https://pushalert.co/)
 - **Version Control** : [Git](https://git-scm.com/)
 
-# สถิติหน้าเว็ป
+# 📈 สถิติหน้าเว็ป
 อ้างอิงจาก [Pagespeed Insights](https://pagespeed.web.dev/)
 <p align="center"> <img width=700px src="https://raw.githubusercontent.com/FujaTyping/Yorwor64Slash10/fdcb0a66758fd9aefe2be877405b67f4b6cc1e2c/pagespeed%20insights.svg" alt="Yw" /> </p>
 
