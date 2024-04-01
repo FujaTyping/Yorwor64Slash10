@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: 
+Disallow: /error
+Disallow: /assets
+Sitemap: https://talent.siraphop.me/sitemap.xml
